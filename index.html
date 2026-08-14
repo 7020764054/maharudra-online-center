@@ -7,809 +7,580 @@
 <title>महारुद्र ऑनलाइन सेंटर | फुलसावंगी</title>
 
 <meta name="description"
-content="महारुद्र ऑनलाइन सेंटर फुलसावंगी - शेतकरी, नागरिक व व्यवसायिकांसाठी विविध ऑनलाइन सेवा.">
+content="महारुद्र ऑनलाइन सेंटर फुलसावंगी - शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा, शासकीय योजना व प्रमाणपत्रे एकाच ठिकाणी.">
 
 <style>
 
-:root{
-    --green:#075b3b;
-    --green2:#0b9b62;
-    --dark:#063d2a;
-    --gold:#e7bd4d;
-    --light:#f4faf7;
-    --white:#ffffff;
-    --text:#17362a;
-    --muted:#6b7c74;
-    --shadow:0 15px 40px rgba(0,0,0,.10);
-}
-
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
-}
-
-html{
+    box-sizing:border-box;
     scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,"Noto Sans Devanagari",sans-serif;
-    background:var(--light);
-    color:var(--text);
+    font-family:"Noto Sans Devanagari","Arial",sans-serif;
+    background:#f5f8f5;
+    color:#24352a;
+    line-height:1.7;
 }
 
-/* TOP BAR */
-
-.topbar{
-    background:var(--dark);
-    color:white;
-    text-align:center;
-    padding:10px;
-    font-size:13px;
-}
-
-.topbar strong{
-    color:var(--gold);
-}
-
-/* HEADER */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid #e4eee9;
+button,
+a{
+    font-family:inherit;
 }
 
 .navbar{
-    max-width:1200px;
-    margin:auto;
-    min-height:75px;
-    padding:10px 20px;
-
+    position:sticky;
+    top:0;
+    z-index:9999;
+    background:rgba(5,65,42,.97);
+    backdrop-filter:blur(12px);
+    padding:13px 6%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    box-shadow:0 3px 18px rgba(0,0,0,.18);
 }
 
 .logo{
+    color:#fff;
+    text-decoration:none;
     font-size:23px;
-    font-weight:1000;
-    color:var(--dark);
+    font-weight:900;
 }
 
-.logo small{
-    display:block;
-    color:var(--green2);
-    font-size:10px;
-    letter-spacing:2px;
+.logo span{
+    color:#f4c542;
 }
 
-nav{
+.nav-links{
     display:flex;
-    gap:25px;
+    gap:24px;
+    list-style:none;
 }
 
-nav a{
-    font-weight:800;
-    font-size:14px;
-    color:var(--dark);
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:700;
 }
 
-nav a:hover{
-    color:var(--green2);
-}
-
-.menu{
-    display:none;
-    border:0;
-    background:#edf7f2;
-    padding:10px;
-    border-radius:10px;
-    font-size:22px;
+.nav-links a:hover{
+    color:#f4c542;
 }
 
 /* HERO */
 
 .hero{
-    background:
-    radial-gradient(circle at 85% 20%,#ffffff25,transparent 25%),
-    linear-gradient(135deg,#063d2a,#087a4e 60%,#11a76a);
-
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    padding:80px 7%;
     color:white;
+    background:
+    linear-gradient(90deg,rgba(2,38,24,.94),rgba(2,48,30,.65),rgba(2,38,24,.15)),
+    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=85")
+    center/cover;
 }
 
-.hero-container{
-    max-width:1200px;
-    margin:auto;
-
-    min-height:570px;
-
-    padding:80px 20px;
-
-    display:grid;
-    grid-template-columns:1.2fr .8fr;
-
-    gap:40px;
-
-    align-items:center;
+.hero-content{
+    max-width:850px;
 }
 
 .badge{
     display:inline-block;
-    padding:9px 14px;
-
+    color:#f4c542;
+    border:1px solid #f4c542;
     border-radius:30px;
-
-    border:1px solid #ffffff40;
-    background:#ffffff15;
-
-    font-size:13px;
-    font-weight:900;
+    padding:7px 18px;
+    margin-bottom:20px;
+    font-weight:800;
 }
 
 .hero h1{
-    font-size:clamp(40px,6vw,70px);
-    line-height:1.05;
-
-    margin:20px 0 15px;
+    font-size:clamp(40px,6vw,72px);
+    line-height:1.15;
+    margin-bottom:20px;
 }
 
 .hero h1 span{
-    color:#ffe083;
+    color:#f4c542;
 }
 
 .hero p{
-    max-width:700px;
-
-    line-height:1.7;
-
-    font-size:18px;
-
-    color:#eafff4;
+    max-width:760px;
+    font-size:19px;
+    margin-bottom:28px;
 }
 
 .buttons{
     display:flex;
     flex-wrap:wrap;
-    gap:12px;
-
-    margin-top:25px;
+    gap:10px;
 }
 
 .btn{
-    display:inline-flex;
-
-    align-items:center;
-    justify-content:center;
-
-    padding:13px 19px;
-
-    border-radius:12px;
-
-    font-weight:900;
-
-    border:0;
-
+    display:inline-block;
+    border:none;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:9px;
+    font-weight:800;
     cursor:pointer;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 .btn-primary{
-    background:var(--gold);
-    color:#3b2c00;
+    background:#f4c542;
+    color:#17351f;
 }
 
-.btn-white{
-    background:white;
-    color:var(--dark);
+.btn-whatsapp{
+    background:#25D366;
+    color:#fff;
 }
 
-.btn-outline{
-    background:#ffffff15;
-    color:white;
-
-    border:1px solid #ffffff55;
+.btn-map{
+    background:#fff;
+    color:#07583b;
 }
 
-.hero-card{
-    padding:30px;
-
-    border-radius:28px;
-
-    background:#ffffff15;
-    border:1px solid #ffffff30;
-
-    box-shadow:0 25px 70px #0003;
-
-    text-align:center;
-}
-
-.hero-icon{
-    font-size:85px;
-}
-
-.hero-card h3{
-    font-size:25px;
-    margin:10px 0;
-}
-
-.hero-card p{
-    font-size:14px;
-}
-
-/* SECTION */
+/* SECTIONS */
 
 section{
-    padding:70px 20px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
+    padding:75px 6%;
 }
 
 .section-title{
     text-align:center;
-
-    margin-bottom:35px;
+    margin-bottom:42px;
 }
 
-.eyebrow{
-    color:var(--green2);
-
-    font-size:12px;
-
+.section-title small{
+    color:#c08e0c;
+    font-weight:900;
     letter-spacing:2px;
-
-    font-weight:1000;
 }
 
 .section-title h2{
-    font-size:clamp(30px,5vw,46px);
-
-    color:var(--dark);
-
-    margin:8px 0;
+    color:#075a3b;
+    font-size:38px;
+    margin:7px 0;
 }
 
 .section-title p{
-    color:var(--muted);
-}
-
-/* SEARCH */
-
-.tools{
-    display:flex;
-
-    gap:10px;
-
-    margin-bottom:25px;
-
-    flex-wrap:wrap;
-}
-
-.search{
-    flex:1;
-
-    min-width:230px;
-
-    padding:15px;
-
-    border-radius:13px;
-
-    border:1px solid #d9e8e1;
-
-    font-size:15px;
-
-    outline:none;
-
-    background:white;
-}
-
-.filter{
-    padding:0 15px;
-
-    border-radius:13px;
-
-    border:1px solid #d9e8e1;
-
-    background:white;
-
-    font-weight:800;
+    color:#68766d;
 }
 
 /* SERVICES */
 
-.services-grid{
+.services{
+    background:#f7faf7;
+}
+
+.service-grid{
+    max-width:1250px;
+    margin:auto;
     display:grid;
-
-    grid-template-columns:
-    repeat(3,1fr);
-
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:20px;
 }
 
 .service-card{
     background:white;
-
-    border:1px solid #dce9e3;
-
-    border-radius:22px;
-
+    border:1px solid #e1e9e2;
+    border-radius:17px;
+    padding:23px;
+    box-shadow:0 7px 25px rgba(15,70,40,.07);
+    position:relative;
     overflow:hidden;
-
-    box-shadow:var(--shadow);
-
     transition:.3s;
 }
 
 .service-card:hover{
-    transform:translateY(-7px);
-
-    box-shadow:0 25px 55px rgba(6,61,42,.18);
+    transform:translateY(-6px);
+    box-shadow:0 15px 32px rgba(15,70,40,.14);
 }
 
-.service-image{
-    height:155px;
-
-    display:grid;
-
-    place-items:center;
-
-    font-size:65px;
-
-    color:white;
-
-    background:
-    linear-gradient(135deg,#075b3b,#12a76a);
+.service-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(90deg,#08734a,#f4c542);
 }
 
-.service-image:nth-child(2){
-    background:linear-gradient(135deg,#14556c,#159b80);
-}
-
-.service-body{
-    padding:18px;
-}
-
-.service-body h3{
-    color:var(--dark);
-
-    font-size:18px;
-
-    line-height:1.45;
-
-    margin-bottom:10px;
-}
-
-.category{
-    color:var(--muted);
-
+.service-number{
+    position:absolute;
+    right:15px;
+    top:14px;
+    background:#edf7ef;
+    color:#087047;
     font-size:12px;
-
-    margin-bottom:15px;
-}
-
-.actions{
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:7px;
-}
-
-.actions button,
-.actions a{
-
-    border:0;
-
-    padding:10px 12px;
-
-    border-radius:10px;
-
-    font-size:13px;
-
     font-weight:900;
+    padding:4px 8px;
+    border-radius:20px;
+}
 
+.icon{
+    font-size:36px;
+    margin-bottom:7px;
+}
+
+.service-card h3{
+    color:#075a3b;
+    font-size:20px;
+    margin-bottom:8px;
+    padding-right:45px;
+}
+
+.service-card p{
+    color:#68746c;
+    font-size:14px;
+    min-height:65px;
+}
+
+.info-btn{
+    width:100%;
+    margin-top:15px;
+    border:0;
+    border-radius:8px;
+    background:#075a3b;
+    color:white;
+    padding:11px;
+    font-weight:800;
     cursor:pointer;
 }
 
-.document-btn{
-    background:var(--green);
-
-    color:white;
+.info-btn:hover{
+    background:#0a7b50;
 }
 
-.whatsapp-btn{
-    background:#e5f8ed;
+/* ABOUT */
 
-    color:#08764d;
-}
-
-.call-btn{
-    background:#fff2d1;
-
-    color:#765a0c;
-}
-
-/* FEATURES */
-
-.features{
+.about{
     background:white;
 }
 
-.feature-grid{
+.about-box{
+    max-width:1100px;
+    margin:auto;
     display:grid;
-
-    grid-template-columns:
-    repeat(4,1fr);
-
-    gap:18px;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
 }
 
-.feature{
-    padding:23px;
-
+.about-image{
+    min-height:400px;
     border-radius:20px;
-
-    border:1px solid #dfebe5;
-
-    background:#fbfefc;
+    background:
+    linear-gradient(rgba(0,50,30,.12),rgba(0,50,30,.12)),
+    url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=85")
+    center/cover;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
-.feature-icon{
-    font-size:35px;
+.about-content h2{
+    color:#075a3b;
+    font-size:38px;
+    margin-bottom:15px;
 }
 
-.feature h3{
+.about-content p{
+    color:#59665d;
+    margin-bottom:15px;
+}
+
+.points{
+    list-style:none;
+}
+
+.points li{
     margin:9px 0;
-
-    color:var(--dark);
+    font-weight:700;
 }
 
-.feature p{
-    color:var(--muted);
+.points li::before{
+    content:"✓";
+    color:#12814d;
+    margin-right:10px;
+    font-weight:900;
+}
 
-    font-size:13px;
+/* HIGHLIGHT */
 
-    line-height:1.6;
+.highlight{
+    background:
+    linear-gradient(90deg,rgba(3,65,41,.95),rgba(3,65,41,.84)),
+    url("https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+    color:white;
+    text-align:center;
+}
+
+.highlight h2{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.highlight p{
+    max-width:800px;
+    margin:0 auto 25px;
+    font-size:18px;
 }
 
 /* CONTACT */
 
 .contact{
-    background:
-    linear-gradient(135deg,#063d2a,#0a8053);
-
-    color:white;
+    background:#f4f7f4;
 }
 
-.contact .section-title h2{
-    color:white;
-}
-
-.contact-grid{
+.contact-box{
+    max-width:1100px;
+    margin:auto;
     display:grid;
-
-    grid-template-columns:
-    1fr 1fr;
-
+    grid-template-columns:1fr 1fr;
     gap:25px;
 }
 
 .contact-card{
-    padding:28px;
-
-    border-radius:22px;
-
-    background:#ffffff12;
-
-    border:1px solid #ffffff25;
+    background:white;
+    padding:30px;
+    border-radius:17px;
+    box-shadow:0 7px 25px rgba(0,0,0,.06);
 }
 
 .contact-card h3{
+    color:#075a3b;
+    font-size:24px;
     margin-bottom:15px;
 }
 
-.contact-card p{
-    line-height:1.8;
+.contact-item{
+    margin:12px 0;
+}
 
-    color:#e9fff5;
+.contact-item a{
+    color:#075a3b;
+    font-weight:800;
 }
 
 /* FOOTER */
 
 footer{
-    background:#032a1d;
-
-    color:#d7eee5;
-
+    background:#063b29;
+    color:white;
     text-align:center;
+    padding:35px 20px;
+}
 
-    padding:25px;
+footer h2{
+    color:#f4c542;
+}
 
+footer p{
+    color:#d9e5dc;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.15);
+    margin-top:22px;
+    padding-top:16px;
     font-size:13px;
 }
 
-/* DOCUMENT MODAL */
+/* MODAL */
 
 .modal{
     display:none;
-
     position:fixed;
-
     inset:0;
-
-    z-index:5000;
-
-    background:#0009;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:18px;
+    z-index:10000;
+    background:rgba(0,0,0,.70);
+    padding:20px;
+    overflow-y:auto;
 }
 
-.modal.active{
+.modal.show{
     display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .modal-box{
-    width:min(650px,100%);
-
-    max-height:88vh;
-
-    overflow:auto;
-
+    width:min(850px,100%);
+    max-height:92vh;
+    overflow-y:auto;
     background:white;
-
-    border-radius:25px;
-
-    padding:28px;
-
-    position:relative;
-}
-
-.close{
-    position:absolute;
-
-    right:13px;
-    top:12px;
-
-    width:40px;
-    height:40px;
-
-    border:0;
-
-    border-radius:50%;
-
-    background:#edf5f1;
-
-    font-size:24px;
-
-    cursor:pointer;
-}
-
-.modal-box h2{
-    color:var(--dark);
-
-    padding-right:40px;
-
-    margin-bottom:20px;
-}
-
-.documents-list{
-    padding-left:20px;
-}
-
-.documents-list li{
-    margin:9px 0;
-
-    padding:10px;
-
-    background:#f3faf6;
-
-    border-left:4px solid var(--gold);
-
-    border-radius:8px;
-}
-
-/* SMART ASSISTANT */
-
-.chat-button{
-    position:fixed;
-
-    right:18px;
-    bottom:18px;
-
-    z-index:4500;
-
-    border:0;
-
-    border-radius:50px;
-
-    padding:15px 19px;
-
-    background:var(--green2);
-
-    color:white;
-
-    font-weight:1000;
-
-    box-shadow:0 15px 35px #0005;
-
-    cursor:pointer;
-}
-
-.chat-window{
-    display:none;
-
-    position:fixed;
-
-    right:18px;
-    bottom:80px;
-
-    z-index:4501;
-
-    width:min(380px,calc(100vw - 28px));
-
-    background:white;
-
     border-radius:20px;
-
-    overflow:hidden;
-
-    box-shadow:0 25px 70px #0006;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+    animation:popup .25s ease;
 }
 
-.chat-window.active{
-    display:block;
+@keyframes popup{
+    from{
+        opacity:0;
+        transform:scale(.95) translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:scale(1) translateY(0);
+    }
 }
 
-.chat-header{
-    background:var(--green);
-
+.modal-head{
+    position:sticky;
+    top:0;
+    z-index:2;
+    background:#075a3b;
     color:white;
-
-    padding:14px 16px;
-
-    font-weight:900;
-
+    padding:20px 25px;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 }
 
-.chat-header button{
+.modal-head h2{
+    font-size:24px;
+}
+
+.close{
     border:0;
-
-    background:#ffffff22;
-
-    color:white;
-
-    border-radius:50%;
-
-    width:32px;
-    height:32px;
-}
-
-.chat-body{
-    height:310px;
-
-    overflow:auto;
-
-    padding:13px;
-
-    background:#f5faf7;
-}
-
-.message{
-    max-width:88%;
-
-    padding:10px 12px;
-
-    border-radius:13px;
-
-    margin:7px 0;
-
-    font-size:13px;
-
-    line-height:1.55;
-}
-
-.bot{
     background:white;
-
-    border:1px solid #dfeae5;
+    color:#075a3b;
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    font-size:23px;
+    cursor:pointer;
+    font-weight:bold;
 }
 
-.user{
-    background:#dff6e8;
-
-    margin-left:auto;
+.modal-body{
+    padding:25px;
 }
 
-.chat-form{
+.modal-section{
+    margin-bottom:22px;
+}
+
+.modal-section h3{
+    color:#075a3b;
+    margin-bottom:8px;
+    font-size:20px;
+}
+
+.modal-section ul{
+    padding-left:22px;
+}
+
+.modal-section li{
+    margin:5px 0;
+}
+
+.notice{
+    background:#fff8df;
+    border-left:5px solid #f0bb18;
+    padding:12px 15px;
+    border-radius:7px;
+    margin-top:12px;
+}
+
+.modal-actions{
     display:flex;
-
-    border-top:1px solid #e2ebe7;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
 }
 
-.chat-form input{
-    flex:1;
+/* FLOATING WHATSAPP */
 
-    border:0;
-
-    padding:14px;
-
-    outline:none;
-}
-
-.chat-form button{
-    border:0;
-
-    background:var(--green);
-
+.float-wa{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#25D366;
     color:white;
-
-    padding:0 18px;
-
-    font-weight:900;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 7px 22px rgba(0,0,0,.25);
+    z-index:9998;
 }
 
 /* MOBILE */
 
-@media(max-width:900px){
+@media(max-width:750px){
 
-    .hero-container{
-        grid-template-columns:1fr;
+    .navbar{
+        padding:12px 5%;
     }
 
-    .services-grid{
-        grid-template-columns:repeat(2,1fr);
+    .logo{
+        font-size:18px;
     }
 
-    .feature-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    nav{
+    .nav-links{
         display:none;
     }
 
-    .menu{
-        display:block;
-    }
-
-}
-
-@media(max-width:600px){
-
-    .hero-container{
-        padding:55px 20px;
-    }
-
-    .hero-card{
-        display:none;
-    }
-
-    .services-grid,
-    .contact-grid{
-        grid-template-columns:1fr;
-    }
-
-    .feature-grid{
-        grid-template-columns:1fr 1fr;
+    .hero{
+        min-height:620px;
+        padding:60px 7%;
     }
 
     .hero h1{
         font-size:42px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:55px 5%;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .about-box,
+    .contact-box{
+        grid-template-columns:1fr;
+    }
+
+    .about-image{
+        min-height:300px;
+    }
+
+    .highlight h2{
+        font-size:30px;
+    }
+
+    .modal{
+        padding:10px;
+    }
+
+    .modal-head h2{
+        font-size:19px;
+    }
+
+    .modal-body{
+        padding:18px;
     }
 
 }
@@ -819,222 +590,116 @@ footer{
 
 <body>
 
-<!-- TOP INFORMATION -->
-
-<div class="topbar">
-
-📍 <strong>महारुद्र ऑनलाइन सेंटर, फुलसावंगी</strong>
-
-•
-
-ता. महागाव • जि. यवतमाळ • महाराष्ट्र – 445230
-
-•
-
-📞 7020764054
-
-</div>
-
-
-<!-- HEADER -->
-
-<header>
-
-<div class="navbar">
+<nav class="navbar">
 
 <a href="#home" class="logo">
-
-महारुद्र ऑनलाइन सेंटर
-
-<small>FULSAWANGI DIGITAL SERVICE CENTER</small>
-
+🌿 महारुद्र <span>ऑनलाइन सेंटर</span>
 </a>
 
-<button class="menu" onclick="toggleMenu()">☰</button>
-
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#services">आमच्या सेवा</a>
-
-<a href="#about">आमच्याबद्दल</a>
-
-<a href="#contact">संपर्क</a>
+<ul class="nav-links">
+<li><a href="#home">मुख्यपृष्ठ</a></li>
+<li><a href="#services">सेवा</a></li>
+<li><a href="#about">आमच्याबद्दल</a></li>
+<li><a href="#contact">संपर्क</a></li>
+</ul>
 
 </nav>
+
+
+<header class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="badge">
+विश्वास • सेवा • डिजिटल सुविधा
+</div>
+
+<h1>
+शेतकरी आणि<br>
+<span>नागरिकांसाठी</span><br>
+सर्व ऑनलाइन सेवा एकाच ठिकाणी
+</h1>
+
+<p>
+महारुद्र ऑनलाइन सेंटर, फुलसावंगी येथे विविध शासकीय योजना,
+प्रमाणपत्रे, जमीनविषयक कामे, शेतकरी सेवा आणि डिजिटल सुविधा
+विश्वासाने उपलब्ध करून दिल्या जातात.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary" href="tel:7020764054">
+📞 कॉल करा
+</a>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/917020764054"
+target="_blank">
+💬 WhatsApp
+</a>
+
+<a class="btn btn-map"
+href="https://www.google.com/maps/search/?api=1&query=Maharudra+Online+Center+Fulsawangi"
+target="_blank">
+📍 Google Maps
+</a>
+
+</div>
 
 </div>
 
 </header>
 
 
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-<div class="hero-container">
-
-<div>
-
-<span class="badge">
-
-🌾 शेतकरी व नागरिकांसाठी ऑनलाइन सेवा
-
-</span>
-
-<h1>
-
-महारुद्र
-
-<span>ऑनलाइन सेंटर</span>
-
-</h1>
-
-<p>
-
-शासकीय योजना, प्रमाणपत्रे, जमीनविषयक सेवा,
-
-KYC, ऑनलाइन फॉर्म आणि डिजिटल सेवा
-
-<strong>एकाच ठिकाणी.</strong>
-
-</p>
-
-<div class="buttons">
-
-<a href="#services" class="btn btn-primary">
-
-📋 सर्व सेवा पाहा
-
-</a>
-
-<a href="tel:7020764054" class="btn btn-white">
-
-📞 Call Now
-
-</a>
-
-<a href="https://wa.me/917020764054"
-
-target="_blank"
-
-class="btn btn-outline">
-
-💬 WhatsApp
-
-</a>
-
-</div>
-
-</div>
-
-
-<div class="hero-card">
-
-<div class="hero-icon">🤝</div>
-
-<h3>
-
-तुमच्या सेवेसाठी आम्ही सदैव तत्पर
-
-</h3>
-
-<p>
-
-प्रत्येक सेवेवर Documents बटन क्लिक करून
-
-आवश्यक कागदपत्रांची यादी लगेच पाहा.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section id="services">
-
-<div class="container">
+<section class="services" id="services">
 
 <div class="section-title">
 
-<div class="eyebrow">
+<small>OUR SERVICES</small>
 
-MAHARUDRA ONLINE CENTER
-
-</div>
-
-<h2>
-
-आमच्या प्रमुख ऑनलाइन सेवा
-
-</h2>
+<h2>आमच्या सेवा</h2>
 
 <p>
-
-सेवा शोधा • Documents पाहा • WhatsApp वर चौकशी करा
-
+खालील सेवांवर क्लिक करून त्या सेवेसाठी आवश्यक कागदपत्रे,
+प्रक्रिया व अधिक माहिती पाहा.
 </p>
 
 </div>
 
+<div class="service-grid" id="serviceGrid"></div>
 
-<div class="tools">
-
-<input
-
-type="text"
-
-id="search"
-
-class="search"
-
-placeholder="🔎 सेवा शोधा... उदा. PM-KISAN, जात, ७/१२"
-
-oninput="renderServices()"
-
->
+</section>
 
 
-<select
+<section class="about" id="about">
 
-id="filter"
+<div class="about-box">
 
-class="filter"
+<div class="about-image"></div>
 
-onchange="renderServices()"
+<div class="about-content">
 
->
+<h2>महारुद्र ऑनलाइन सेंटर</h2>
 
-<option value="all">सर्व सेवा</option>
+<p>
+फुलसावंगी येथील शेतकरी बांधव व नागरिकांसाठी
+विविध ऑनलाइन आणि शासकीय सेवा एकाच ठिकाणी उपलब्ध
+करून देण्याचा आमचा प्रयत्न आहे.
+</p>
 
-<option>शेतकरी सेवा</option>
+<p>
+अर्ज प्रक्रिया, कागदपत्रे, KYC, प्रमाणपत्रे आणि
+विविध शासकीय योजनांसाठी आवश्यक ऑनलाइन सहाय्य
+उपलब्ध करून दिले जाते.
+</p>
 
-<option>प्रमाणपत्रे</option>
-
-<option>जमीन सेवा</option>
-
-<option>शासकीय योजना</option>
-
-<option>व्यवसाय सेवा</option>
-
-<option>डिजिटल सेवा</option>
-
-</select>
-
-</div>
-
-
-<div
-
-class="services-grid"
-
-id="servicesGrid">
+<ul class="points">
+<li>विश्वासार्ह ऑनलाइन सेवा</li>
+<li>शेतकरी बांधवांसाठी विशेष सहाय्य</li>
+<li>विविध शासकीय योजनांची माहिती</li>
+<li>डिजिटल सेवा एकाच ठिकाणी</li>
+<li>कागदपत्रांबाबत मार्गदर्शन</li>
+</ul>
 
 </div>
 
@@ -1043,194 +708,79 @@ id="servicesGrid">
 </section>
 
 
-<!-- FEATURES -->
+<section class="highlight">
 
-<section id="about" class="features">
-
-<div class="container">
-
-<div class="section-title">
-
-<div class="eyebrow">
-
-WHY MAHARUDRA?
-
-</div>
-
-<h2>
-
-आमच्या सेवेची वैशिष्ट्ये
-
-</h2>
-
-</div>
-
-
-<div class="feature-grid">
-
-
-<div class="feature">
-
-<div class="feature-icon">📄</div>
-
-<h3>Documents माहिती</h3>
+<h2>शेतकरी बांधवांच्या सदैव सेवार्थ 🌾</h2>
 
 <p>
-
-प्रत्येक सेवेसाठी आवश्यक कागदपत्रे
-
-एका क्लिकवर पाहता येतील.
-
+अन्नदाता सुखी भव!<br>
+शेतकरी व नागरिकांच्या ऑनलाइन कामांसाठी
+महारुद्र ऑनलाइन सेंटर, फुलसावंगी.
 </p>
 
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">🤖</div>
-
-<h3>Smart Assistant</h3>
-
-<p>
-
-ग्राहकांच्या सामान्य प्रश्नांना
-
-वेबसाइटवरच प्राथमिक उत्तर.
-
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">💬</div>
-
-<h3>WhatsApp चौकशी</h3>
-
-<p>
-
-प्रत्येक सेवेसाठी तयार enquiry message.
-
-</p>
-
-</div>
-
-
-<div class="feature">
-
-<div class="feature-icon">📱</div>
-
-<h3>Mobile Friendly</h3>
-
-<p>
-
-मोबाईल, टॅबलेट आणि कॉम्प्युटरवर
-
-सुंदर अनुभव.
-
-</p>
-
-</div>
-
-
-</div>
-
-</div>
+<a class="btn btn-primary"
+href="https://wa.me/917020764054"
+target="_blank">
+💬 WhatsApp वर संपर्क करा
+</a>
 
 </section>
 
-
-<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
-<div class="container">
-
 <div class="section-title">
 
-<div class="eyebrow" style="color:#ffe083">
+<small>CONTACT US</small>
 
-CONTACT US
+<h2>आमच्याशी संपर्क</h2>
 
-</div>
-
-<h2>
-
-महारुद्र ऑनलाइन सेंटर
-
-</h2>
+<p>ऑनलाइन सेवांसाठी आजच संपर्क करा.</p>
 
 </div>
 
-
-<div class="contact-grid">
-
+<div class="contact-box">
 
 <div class="contact-card">
 
-<h3>📍 कार्यालयाचा पत्ता</h3>
+<h3>📍 ऑफिसचा पत्ता</h3>
 
-<p>
+<div class="contact-item">
+<strong>महारुद्र ऑनलाइन सेंटर, फुलसावंगी</strong>
+</div>
 
-देवी मंदिरच्या पाठीमागे,<br>
-
+<div class="contact-item">
+देवी मंदिराच्या पाठीमागे,<br>
 आठवडी बाजार रोड,<br>
-
 आंबेडकर चौक, फुलसावंगी,<br>
-
-ता. महागाव,<br>
-
-जि. यवतमाळ,<br>
-
-महाराष्ट्र – 445230
-
-</p>
+ता. उमरखेड, जि. यवतमाळ
+</div>
 
 </div>
 
-
 <div class="contact-card">
 
-<h3>📞 आमच्याशी संपर्क करा</h3>
+<h3>📞 संपर्क</h3>
 
-<p>
-
-मोबाईल:
-
-<strong>7020764054</strong>
-
-</p>
+<div class="contact-item">
+<strong>मोबाईल:</strong>
+<a href="tel:7020764054">7020764054</a>
+</div>
 
 <div class="buttons">
 
-<a
-
-href="tel:7020764054"
-
-class="btn btn-white">
-
-📞 Call Now
-
+<a class="btn btn-primary"
+href="tel:7020764054">
+📞 कॉल करा
 </a>
 
-<a
-
+<a class="btn btn-whatsapp"
 href="https://wa.me/917020764054"
-
-target="_blank"
-
-class="btn btn-primary">
-
+target="_blank">
 💬 WhatsApp
-
 </a>
 
 </div>
-
-</div>
-
 
 </div>
 
@@ -1239,797 +789,344 @@ class="btn btn-primary">
 </section>
 
 
-<!-- FOOTER -->
-
 <footer>
 
-© 2026 महारुद्र ऑनलाइन सेंटर, फुलसावंगी
+<h2>🌿 महारुद्र ऑनलाइन सेंटर</h2>
 
-<br><br>
+<p>फुलसावंगी</p>
 
-शेतकरी बांधवांच्या सदैव सेवार्थ
+<p>
+शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा एकाच ठिकाणी!
+</p>
 
-<br>
-
-// अन्नदाता सुखी भव //
+<div class="footer-bottom">
+© 2026 Maharudra Online Center Fulsawangi. All Rights Reserved.
+</div>
 
 </footer>
 
 
-<!-- DOCUMENT MODAL -->
+<a class="float-wa"
+href="https://wa.me/917020764054"
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
 
-<div
 
-class="modal"
+<!-- MODAL -->
 
-id="documentModal"
-
-onclick="if(event.target===this)closeDocuments()">
+<div class="modal" id="serviceModal">
 
 <div class="modal-box">
 
-<button
-
-class="close"
-
-onclick="closeDocuments()">
-
-×
-
-</button>
-
+<div class="modal-head">
 
 <h2 id="modalTitle"></h2>
 
-<h3>
-
-📄 आवश्यक कागदपत्रे
-
-</h3>
-
-<br>
-
-<ul
-
-class="documents-list"
-
-id="documentsList">
-
-</ul>
-
-
-<p
-
-style="font-size:12px;color:#718078;margin-top:20px">
-
-टीप: अंतिम कागदपत्रे संबंधित शासकीय पोर्टल
-
-किंवा योजनेच्या नियमांनुसार बदलू शकतात.
-
-अर्ज करण्यापूर्वी कार्यालयाकडून पुष्टी करा.
-
-</p>
-
-</div>
-
-</div>
-
-
-<!-- SMART ASSISTANT -->
-
-<button
-
-class="chat-button"
-
-onclick="toggleChat()">
-
-🤖 Smart Assistant
-
-</button>
-
-
-<div
-
-class="chat-window"
-
-id="chatWindow">
-
-
-<div class="chat-header">
-
-<span>
-
-🤖 महारुद्र Smart Assistant
-
-</span>
-
-<button onclick="toggleChat()">
-
+<button class="close" onclick="closeModal()">
 ×
-
 </button>
 
 </div>
 
-
-<div
-
-class="chat-body"
-
-id="chatBody">
-
-
-<div class="message bot">
-
-नमस्कार 🙏
-
-मी महारुद्र ऑनलाइन सेंटरचा Smart Assistant आहे.
-
-<br><br>
-
-तुम्ही सेवेचे नाव किंवा
-
-<b>Documents</b>,
-
-<b>पत्ता</b>,
-
-<b>संपर्क</b>
-
-असे लिहू शकता.
+<div class="modal-body" id="modalBody"></div>
 
 </div>
-
-
-</div>
-
-
-<form
-
-class="chat-form"
-
-onsubmit="sendMessage(event)">
-
-<input
-
-id="chatInput"
-
-placeholder="तुमचा प्रश्न लिहा..."
-
-autocomplete="off">
-
-<button>
-
-पाठवा
-
-</button>
-
-</form>
-
 
 </div>
 
 
 <script>
 
-
-/* =========================================
+/* =====================================================
+   MAHARUDRA ONLINE CENTER
    SERVICE DATABASE
-========================================= */
-
+===================================================== */
 
 const services = [
 
 {
-
+id:1,
 icon:"🌾",
-
-name:"PM-KISAN – वारसाच्या नावाने लाभ",
-
-category:"शेतकरी सेवा",
-
-documents:[
-
-"वारस व्यक्तीचे आधार कार्ड",
-
-"७/१२ उतारा",
-
-"फेरफार उतारा",
-
-"पती व पत्नीचे आधार कार्ड",
-
-"रेशन कार्ड झेरॉक्स",
-
-"मयत व्यक्तीचे आधार कार्ड",
-
-"२०१९ पूर्वीचा जुना फेरफार उतारा",
-
-"मृत्यू प्रमाणपत्र"
-
-]
-
-},
-
-
-{
-
-icon:"🛡️",
-
-name:"प्रधानमंत्री फसल विमा योजना",
-
-category:"शेतकरी सेवा",
-
-documents:[
-
+title:"PM-KISAN योजना",
+short:"PM-KISAN अर्ज, KYC व वारसाच्या नावाने लाभ हस्तांतरणासाठी सहाय्य.",
+info:"प्रधानमंत्री किसान सन्मान निधी योजनेशी संबंधित अर्ज, KYC, लाभाची माहिती आणि पात्र प्रकरणांमध्ये वारसाच्या नावाने लाभ हस्तांतरणासाठी ऑनलाइन सहाय्य.",
+docs:[
 "आधार कार्ड",
-
-"७/१२ उतारा",
-
+"7/12 उतारा",
+"8-A उतारा",
 "बँक पासबुक",
-
-"पीकाची माहिती",
-
-"ई-पिक पाहणीची माहिती"
-
-]
-
+"मोबाईल नंबर",
+"वारसाच्या प्रकरणात मृत्यू प्रमाणपत्र व फेरफार उतारा",
+"वारसाच्या प्रकरणात आवश्यक नातेसंबंधाचे कागदपत्र"
+],
+process:[
+"कागदपत्रांची प्राथमिक तपासणी",
+"ऑनलाइन अर्ज / आवश्यक दुरुस्ती",
+"पोर्टलवरील स्थिती तपासणी"
+],
+note:"अंतिम कागदपत्रांची आवश्यकता प्रकरणानुसार व संबंधित पोर्टलच्या सूचनेनुसार बदलू शकते."
 },
 
-
 {
-
-icon:"📱",
-
-name:"ई-पिक पाहणी",
-
-category:"शेतकरी सेवा",
-
-documents:[
-
-"आधार कार्ड",
-
-"७/१२ / जमीन माहिती",
-
-"पीकाची माहिती",
-
-"मोबाईल नंबर"
-
-]
-
-},
-
-
-{
-
+id:2,
 icon:"💰",
-
-name:"पुण्यश्लोक अहिल्यादेवी होळकर शेतकरी कर्जमुक्ती योजना",
-
-category:"शासकीय योजना",
-
-documents:[
-
+title:"शेतकरी कर्जमुक्ती / कर्जसंबंधित सेवा",
+short:"शेतकरी कर्जमाफी व संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.",
+info:"शेतकरी कर्जमाफी / कर्जसंबंधित शासकीय योजनांमध्ये ऑनलाइन माहिती, अर्ज व उपलब्ध सुविधेनुसार सहाय्य.",
+docs:[
 "आधार कार्ड",
-
 "बँक पासबुक",
-
-"कर्ज खाते माहिती",
-
-"KYC कागदपत्रे"
-
-]
-
+"कर्ज खाते / कर्जाची माहिती",
+"7/12 उतारा",
+"8-A उतारा",
+"मोबाईल नंबर"
+],
+process:[
+"योजनेतील पात्रता तपासणी",
+"कागदपत्रांची पडताळणी",
+"ऑनलाइन उपलब्ध असल्यास अर्ज / दुरुस्ती",
+"स्थिती तपासणी"
+],
+note:"कर्जमाफीचा लाभ शासनाच्या त्या वेळच्या नियम व पात्रतेनुसार असतो."
 },
 
-
 {
-
-icon:"🚜",
-
-name:"कृषी यंत्रसामग्री / हळद मशीन अर्ज",
-
-category:"शेतकरी सेवा",
-
-documents:[
-
-"आधार कार्ड",
-
-"७/१२ उतारा",
-
-"बँक पासबुक",
-
-"मोबाईल नंबर",
-
-"योजनेनुसार इतर कागदपत्रे"
-
-]
-
-},
-
-
-{
-
-icon:"📋",
-
-name:"शेतकरी विविध ऑनलाइन अर्ज",
-
-category:"शेतकरी सेवा",
-
-documents:[
-
-"आधार कार्ड",
-
-"७/१२ उतारा",
-
-"बँक पासबुक",
-
-"मोबाईल नंबर",
-
-"योजनेनुसार आवश्यक कागदपत्रे"
-
-]
-
-},
-
-
-{
-
-icon:"📃",
-
-name:"डिजिटल ७/१२ उतारा",
-
-category:"जमीन सेवा",
-
-documents:[
-
-"गट / सर्व्हे नंबर",
-
-"गावाचे नाव",
-
-"मालकाचे नाव"
-
-]
-
-},
-
-
-{
-
-icon:"📑",
-
-name:"८-A उतारा",
-
-category:"जमीन सेवा",
-
-documents:[
-
-"गट / सर्व्हे नंबर",
-
-"गावाचे नाव",
-
-"मालकाचे नाव"
-
-]
-
-},
-
-
-{
-
-icon:"🗺️",
-
-name:"ई-फेरफार / जमीन मॅपिंग",
-
-category:"जमीन सेवा",
-
-documents:[
-
-"७/१२ उतारा",
-
-"फेरफार उतारा",
-
-"गट / सर्व्हे नंबर",
-
-"संबंधित जमीन कागदपत्रे"
-
-]
-
-},
-
-
-{
-
-icon:"🪪",
-
-name:"जात प्रमाणपत्र",
-
-category:"प्रमाणपत्रे",
-
-documents:[
-
-"आधार कार्ड",
-
-"रेशन कार्ड",
-
-"जन्म / शाळा सोडल्याचा दाखला",
-
-"लागू असल्यास पूर्वजांचे जात पुरावे"
-
-]
-
-},
-
-
-{
-
-icon:"🏠",
-
-name:"रहिवासी / अधिवास प्रमाणपत्र",
-
-category:"प्रमाणपत्रे",
-
-documents:[
-
-"आधार कार्ड",
-
-"रेशन कार्ड",
-
-"पत्त्याचा पुरावा"
-
-]
-
-},
-
-
-{
-
-icon:"💵",
-
-name:"उत्पन्न प्रमाणपत्र",
-
-category:"प्रमाणपत्रे",
-
-documents:[
-
-"आधार कार्ड",
-
-"रेशन कार्ड",
-
-"उत्पन्नाचा पुरावा / स्वघोषणा",
-
-"लागू असल्यास इतर पुरावे"
-
-]
-
-},
-
-
-{
-
-icon:"🎓",
-
-name:"EWS १०% प्रमाणपत्र",
-
-category:"प्रमाणपत्रे",
-
-documents:[
-
-"आधार कार्ड",
-
-"उत्पन्न प्रमाणपत्र",
-
-"मालमत्ता / जमीन संबंधित कागदपत्रे",
-
-"रेशन कार्ड",
-
-"पत्त्याचा पुरावा"
-
-]
-
-},
-
-
-{
-
-icon:"📑",
-
-name:"Non-Creamy Layer प्रमाणपत्र / नूतनीकरण",
-
-category:"प्रमाणपत्रे",
-
-documents:[
-
-"आधार कार्ड",
-
-"जात प्रमाणपत्र",
-
-"उत्पन्न प्रमाणपत्र",
-
-"पत्त्याचा पुरावा"
-
-]
-
-},
-
-
-{
-
-icon:"👴",
-
-name:"ज्येष्ठ नागरिक प्रमाणपत्र",
-
-category:"प्रमाणपत्रे",
-
-documents:[
-
-"आधार कार्ड",
-
-"जन्मतारीख पुरावा",
-
-"पत्त्याचा पुरावा"
-
-]
-
-},
-
-
-{
-
+id:3,
 icon:"🌱",
-
-name:"भूमिहीन कृषी शेतमजूर प्रमाणपत्र",
-
-category:"प्रमाणपत्रे",
-
-documents:[
-
+title:"प्रधानमंत्री फसल विमा योजना",
+short:"पीक विमा, ई-पिक पाहणी व संबंधित ऑनलाइन सहाय्य.",
+info:"प्रधानमंत्री फसल विमा योजना, पीक विमा अर्ज व ई-पिक पाहणीशी संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.",
+docs:[
 "आधार कार्ड",
-
-"रेशन कार्ड",
-
-"पत्त्याचा पुरावा",
-
-"लागू असल्यास जमीन नसल्याचा पुरावा"
-
-]
-
-},
-
-
-{
-
-icon:"❤️",
-
-name:"आयुष्मान भारत PM-JAY कार्ड",
-
-category:"शासकीय योजना",
-
-documents:[
-
-"आधार कार्ड",
-
-"मोबाईल नंबर",
-
-"रेशन कार्ड / कुटुंबाची माहिती",
-
-"पात्रता तपासणीसाठी आवश्यक माहिती"
-
-]
-
-},
-
-
-{
-
-icon:"🔥",
-
-name:"PM Ujjwala 2.0",
-
-category:"शासकीय योजना",
-
-documents:[
-
-"आधार कार्ड",
-
-"रेशन कार्ड",
-
+"7/12 उतारा",
+"8-A उतारा",
 "बँक पासबुक",
-
-"मोबाईल नंबर",
-
-"योजनेनुसार इतर कागदपत्रे"
-
-]
-
+"पीक / पिकाची माहिती",
+"मोबाईल नंबर"
+],
+process:[
+"पिक व जमीन तपशील तपासणी",
+"उपलब्ध पोर्टलवर अर्ज प्रक्रिया",
+"ई-पिक पाहणीसंबंधी मार्गदर्शन",
+"अर्जाची पावती / स्थिती जतन"
+],
+note:"पीक विम्याची अंतिम पात्रता, हंगाम व अंतिम तारीख शासन/विमा कंपनीच्या सूचनेनुसार असते."
 },
 
-
 {
-
-icon:"🪪",
-
-name:"Maha ID / Maha Sarathi Card",
-
-category:"शासकीय योजना",
-
-documents:[
-
+id:4,
+icon:"🏥",
+title:"आयुष्मान भारत PM-JAY कार्ड",
+short:"पात्रता तपासणी व आयुष्मान कार्ड संबंधित सहाय्य.",
+info:"आयुष्मान भारत PM-JAY अंतर्गत पात्रता तपासणी, कार्ड तयार करण्याची प्रक्रिया व प्रिंटसाठी सहाय्य.",
+docs:[
 "आधार कार्ड",
-
 "मोबाईल नंबर",
-
-"पत्त्याचा पुरावा"
-
-]
-
+"उपलब्ध असल्यास रेशन कार्ड / कुटुंबाची माहिती"
+],
+process:[
+"लाभार्थी पात्रता तपासणी",
+"आवश्यक e-KYC प्रक्रिया",
+"कार्ड तयार करण्यासाठी ऑनलाइन प्रक्रिया",
+"कार्ड प्रिंट"
+],
+note:"कार्डाची पात्रता शासनाच्या लाभार्थी डेटाबेसवर अवलंबून असते."
 },
 
+{
+id:5,
+icon:"📜",
+title:"डिजिटल 7/12 व 8-A",
+short:"डिजिटल सातबारा व 8-A उतारा मिळवण्यासाठी सुविधा.",
+info:"जमिनीचा डिजिटल 7/12 व 8-A उतारा मिळवण्यासाठी ऑनलाइन सुविधा.",
+docs:[
+"गट नंबर / सर्वे नंबर",
+"गावाचे नाव",
+"तालुका व जिल्हा",
+"मालकाचे नाव"
+],
+process:[
+"जमिनीची माहिती शोधणे",
+"उतारा डाउनलोड / प्रिंट",
+"आवश्यक असल्यास संबंधित नोंदी तपासणे"
+],
+note:"अधिकृत उताऱ्याचा प्रकार वापराच्या उद्देशानुसार वेगळा असू शकतो."
+},
 
 {
-
-icon:"🏢",
-
-name:"Udyam / MSME Registration",
-
-category:"व्यवसाय सेवा",
-
-documents:[
-
+id:6,
+icon:"🗂️",
+title:"ई-फेरफार सेवा",
+short:"जमीन फेरफार व संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.",
+info:"जमीन मालकी, वारस, खरेदी-विक्री किंवा इतर फेरफार नोंदींसाठी उपलब्ध ऑनलाइन प्रक्रियेत सहाय्य.",
+docs:[
 "आधार कार्ड",
+"7/12 उतारा",
+"8-A उतारा",
+"फेरफाराशी संबंधित दस्तऐवज",
+"मृत्यू प्रमाणपत्र - वारस प्रकरणात",
+"नोंदणी दस्त / संबंधित कागदपत्र - लागू असल्यास"
+],
+process:[
+"फेरफाराचा प्रकार तपासणे",
+"संबंधित कागदपत्रे तपासणे",
+"ऑनलाइन उपलब्ध प्रक्रियेनुसार अर्ज / स्थिती तपासणी"
+],
+note:"फेरफाराचा अंतिम निर्णय संबंधित महसूल प्राधिकरणाकडून होतो."
+},
 
-"PAN कार्ड",
-
+{
+id:7,
+icon:"🏛️",
+title:"उद्यम / MSME Registration",
+short:"उद्यम नोंदणी व MSME संबंधित ऑनलाइन सहाय्य.",
+info:"सूक्ष्म, लघु व मध्यम उद्योगांसाठी Udyam Registration प्रक्रियेत ऑनलाइन सहाय्य.",
+docs:[
+"आधार कार्ड",
+"PAN",
 "मोबाईल नंबर",
-
 "ई-मेल",
-
-"बँक खाते माहिती",
-
-"व्यवसायाचा पत्ता"
-
-]
-
+"व्यवसायाची मूलभूत माहिती",
+"बँक खाते माहिती - लागू असल्यास"
+],
+process:[
+"व्यवसायाची माहिती घेणे",
+"अधिकृत पोर्टलवर नोंदणी",
+"OTP / आवश्यक पडताळणी",
+"Udyam Registration संबंधित कागदपत्र प्राप्त करणे"
+],
+note:"नोंदणी करताना अधिकृत पोर्टलवरील माहितीच अंतिम मानावी."
 },
 
+{
+id:8,
+icon:"📋",
+title:"जात प्रमाणपत्र",
+short:"जात प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्र मार्गदर्शन.",
+info:"महाराष्ट्रातील पात्र अर्जदारांसाठी जात प्रमाणपत्राच्या ऑनलाइन अर्ज प्रक्रियेत सहाय्य.",
+docs:[
+"ओळखीचा पुरावा",
+"पत्त्याचा पुरावा",
+"जात दर्शवणारे जुने शासकीय / शैक्षणिक कागदपत्र",
+"शाळा सोडल्याचा दाखला - उपलब्ध असल्यास",
+"वडील / रक्ताच्या नातेवाईकांचे जात प्रमाणपत्र - उपलब्ध असल्यास",
+"आवश्यक असल्यास प्रतिज्ञापत्र"
+],
+process:[
+"जात व कागदपत्रांची प्राथमिक तपासणी",
+"ऑनलाइन अर्ज",
+"संबंधित कार्यालयाची पडताळणी",
+"प्रमाणपत्राची स्थिती तपासणी"
+],
+note:"जात प्रमाणपत्रासाठी आवश्यक पुरावे प्रकरणानुसार बदलू शकतात."
+},
 
 {
-
-icon:"🧾",
-
-name:"Shop Act / व्यवसाय ऑनलाइन सहाय्य",
-
-category:"व्यवसाय सेवा",
-
-documents:[
-
+id:9,
+icon:"🏠",
+title:"रहिवासी / अधिवास प्रमाणपत्र",
+short:"Domicile / Age-Nationality-Domicile सेवेसाठी सहाय्य.",
+info:"महाराष्ट्रातील रहिवास / अधिवास सिद्ध करण्यासाठी संबंधित प्रमाणपत्राच्या ऑनलाइन प्रक्रियेत सहाय्य.",
+docs:[
 "आधार कार्ड",
-
-"PAN कार्ड",
-
-"व्यवसायाचा पत्ता",
-
-"मोबाईल नंबर",
-
-"व्यवसायाची मूलभूत माहिती"
-
-]
-
+"जन्म दाखला किंवा वयाचा पुरावा",
+"शाळा सोडल्याचा दाखला - लागू असल्यास",
+"पत्त्याचा पुरावा",
+"रेशन कार्ड - लागू असल्यास",
+"महाराष्ट्रातील रहिवासाचा उपलब्ध पुरावा"
+],
+process:[
+"रहिवासाचा पुरावा तपासणे",
+"ऑनलाइन अर्ज",
+"संबंधित पडताळणी",
+"प्रमाणपत्र प्राप्त / प्रिंट"
+],
+note:"अधिकृत सेवेचे नाव व पात्रता प्रकरणानुसार Age-Nationality-Domicile किंवा संबंधित Residence service असू शकते."
 },
 
-
 {
-
-icon:"🔐",
-
-name:"KYC सेवा",
-
-category:"डिजिटल सेवा",
-
-documents:[
-
+id:10,
+icon:"💵",
+title:"उत्पन्न प्रमाणपत्र",
+short:"कुटुंबाच्या उत्पन्नाचा अधिकृत दाखला मिळवण्यासाठी सहाय्य.",
+info:"शेती, नोकरी, व्यवसाय, मजुरी इत्यादी उत्पन्नाच्या स्रोतांवर आधारित उत्पन्न प्रमाणपत्रासाठी ऑनलाइन सहाय्य.",
+docs:[
 "आधार कार्ड",
-
-"PAN कार्ड",
-
-"मोबाईल नंबर",
-
-"संबंधित सेवेची कागदपत्रे"
-
-]
-
+"रेशन कार्ड",
+"उत्पन्नाचा स्रोत दर्शवणारे कागदपत्र",
+"7/12 उतारा - शेती असल्यास",
+"पगार प्रमाणपत्र / Form 16 - नोकरी असल्यास",
+"बँक कागदपत्र - लागू असल्यास",
+"आवश्यक असल्यास स्वयंघोषणा / प्रतिज्ञापत्र"
+],
+process:[
+"उत्पन्नाचे स्रोत तपासणे",
+"कागदपत्रे संकलित करणे",
+"ऑनलाइन अर्ज",
+"महसूल पडताळणीनंतर प्रमाणपत्र"
+],
+note:"उत्पन्न प्रमाणपत्राची वैधता व वापर संबंधित योजनेच्या नियमांनुसार तपासावा."
 },
 
-
 {
-
-icon:"💻",
-
-name:"विविध Online Forms",
-
-category:"डिजिटल सेवा",
-
-documents:[
-
+id:11,
+icon:"🎓",
+title:"EWS प्रमाणपत्र",
+short:"आर्थिकदृष्ट्या दुर्बल घटकासाठी EWS प्रक्रियेत सहाय्य.",
+info:"EWS प्रमाणपत्रासाठी पात्रता तपासणी व ऑनलाइन अर्ज प्रक्रियेत सहाय्य.",
+docs:[
 "आधार कार्ड",
-
-"मोबाईल नंबर",
-
-"संबंधित योजनेची कागदपत्रे",
-
-"फोटो / स्वाक्षरी"
-
-]
-
+"उत्पन्न प्रमाणपत्र",
+"रेशन कार्ड / कुटुंबाची माहिती",
+"7/12 उतारा - शेती असल्यास",
+"मालमत्ता / जमीन संबंधित पुरावे - लागू असल्यास",
+"रहिवासी पुरावा",
+"आवश्यक घोषणापत्र / प्रतिज्ञापत्र"
+],
+process:[
+"प्रवर्ग व कुटुंबाची पात्रता तपासणे",
+"उत्पन्न व मालमत्ता संबंधित माहिती तपासणे",
+"ऑनलाइन अर्ज",
+"पडताळणीनंतर प्रमाणपत्र"
+],
+note:"EWS साठी केवळ उत्पन्नच नव्हे तर लागू मालमत्ता/जमीन निकषही तपासले जाऊ शकतात. अंतिम पात्रता संबंधित शासन नियमांनुसार ठरते."
 },
 
+{
+id:12,
+icon:"📑",
+title:"Non-Creamy Layer प्रमाणपत्र",
+short:"OBC/VJNT/SBC इत्यादी पात्र प्रवर्गांसाठी NCL सहाय्य.",
+info:"Non-Creamy Layer प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्र प्रक्रियेत सहाय्य.",
+docs:[
+"जात प्रमाणपत्र",
+"उत्पन्न प्रमाणपत्र",
+"आधार कार्ड",
+"पत्त्याचा पुरावा",
+"कुटुंबाची आवश्यक माहिती",
+"पालकांचे उत्पन्न कागदपत्र - लागू असल्यास"
+],
+process:[
+"जात व उत्पन्नाची प्राथमिक तपासणी",
+"कागदपत्रे अपलोड",
+"ऑनलाइन अर्ज",
+"संबंधित कार्यालयाची पडताळणी"
+],
+note:"NCL साठी उत्पन्न मर्यादा व इतर निकष शासनाच्या लागू नियमांनुसार तपासावेत."
+},
 
 {
-
-icon:"🖨️",
-
-name:"Print / Scan / Digital Services",
-
-category:"डिजिटल सेवा",
-
-documents:[
-
-"आवश्यक कागदपत्रांची फाईल",
-
-"मोबाईल किंवा ई-मेल"
-
-]
-
-}
-
-];
-
-
-/* =========================================
-   SERVICE RENDER
-========================================= */
-
-
-function renderServices(){
-
-const search =
-
-document.getElementById("search")
-
-.value
-
-.toLowerCase()
-
-.trim();
-
-
-const filter =
-
-document.getElementById("filter")
-
-.value;
-
-
-const grid =
-
-document.getElementById("servicesGrid");
-
-
-const filtered = services.filter(service=>{
-
-const searchMatch =
-
-!search ||
-
-service.name
-
-.toLowerCase()
-
-.includes(search) ||
-
-service.category
-
-.toLowerCase()
-
-.includes(search);
-
-
-const categoryMatch =
+id:13,
+icon:"👴",
+title:"ज्येष्ठ नागरिक प्रमाणपत्र",
+short:"ज्येष्ठ नागरिक प्रमाणपत्रासाठी ऑनलाइन अर्ज सुविधा.",
+info:"ज्येष्ठ नागरिक म्हणून वयाचा अधिकृत पुरावा / प्रमाणपत्र मिळवण्यासाठी सहाय्य.",
+docs:[
+"आधार कार्ड",
+"जन्म दाखला किंवा वयाचा पुरावा",
+"शाळा सोडल्याचा दाखला - उपलब्ध असल्यास",
+"पत्त्याचा पुरावा",
+"रेशन कार्ड - लागू असल्यास"
+],
