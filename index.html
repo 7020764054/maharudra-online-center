@@ -7,7 +7,7 @@
 <title>महारुद्र ऑनलाइन सेंटर | फुलसावंगी</title>
 
 <meta name="description"
-content="महारुद्र ऑनलाइन सेंटर फुलसावंगी - शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा, शासकीय योजना व प्रमाणपत्रे एकाच ठिकाणी.">
+content="महारुद्र ऑनलाइन सेंटर फुलसावंगी - शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा एकाच ठिकाणी.">
 
 <style>
 
@@ -20,34 +20,29 @@ content="महारुद्र ऑनलाइन सेंटर फुल�
 
 body{
     font-family:"Noto Sans Devanagari","Arial",sans-serif;
-    background:#f5f8f5;
-    color:#24352a;
+    background:#f5f7f4;
+    color:#253326;
     line-height:1.7;
-}
-
-button,
-a{
-    font-family:inherit;
 }
 
 .navbar{
     position:sticky;
     top:0;
-    z-index:9999;
-    background:rgba(5,65,42,.97);
-    backdrop-filter:blur(12px);
-    padding:13px 6%;
+    z-index:1000;
+    background:rgba(9,66,45,.97);
+    backdrop-filter:blur(10px);
+    padding:14px 6%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 3px 18px rgba(0,0,0,.18);
+    box-shadow:0 3px 15px rgba(0,0,0,.18);
 }
 
 .logo{
-    color:#fff;
-    text-decoration:none;
+    color:white;
     font-size:23px;
-    font-weight:900;
+    font-weight:800;
+    text-decoration:none;
 }
 
 .logo span{
@@ -56,14 +51,14 @@ a{
 
 .nav-links{
     display:flex;
-    gap:24px;
+    gap:25px;
     list-style:none;
 }
 
 .nav-links a{
     color:white;
     text-decoration:none;
-    font-weight:700;
+    font-weight:600;
 }
 
 .nav-links a:hover{
@@ -76,30 +71,30 @@ a{
     min-height:650px;
     display:flex;
     align-items:center;
-    padding:80px 7%;
-    color:white;
     background:
-    linear-gradient(90deg,rgba(2,38,24,.94),rgba(2,48,30,.65),rgba(2,38,24,.15)),
+    linear-gradient(90deg,rgba(4,39,25,.94),rgba(4,39,25,.62),rgba(4,39,25,.25)),
     url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=85")
     center/cover;
+    color:white;
+    padding:80px 7%;
 }
 
 .hero-content{
-    max-width:850px;
+    max-width:800px;
 }
 
 .badge{
     display:inline-block;
-    color:#f4c542;
     border:1px solid #f4c542;
-    border-radius:30px;
+    color:#f4c542;
     padding:7px 18px;
+    border-radius:30px;
     margin-bottom:20px;
-    font-weight:800;
+    font-weight:bold;
 }
 
 .hero h1{
-    font-size:clamp(40px,6vw,72px);
+    font-size:clamp(40px,6vw,70px);
     line-height:1.15;
     margin-bottom:20px;
 }
@@ -109,26 +104,24 @@ a{
 }
 
 .hero p{
-    max-width:760px;
-    font-size:19px;
-    margin-bottom:28px;
+    font-size:20px;
+    max-width:720px;
+    margin-bottom:30px;
 }
 
 .buttons{
     display:flex;
     flex-wrap:wrap;
-    gap:10px;
+    gap:12px;
 }
 
 .btn{
     display:inline-block;
-    border:none;
     text-decoration:none;
-    padding:12px 22px;
-    border-radius:9px;
-    font-weight:800;
-    cursor:pointer;
-    transition:.25s;
+    padding:13px 24px;
+    border-radius:8px;
+    font-weight:700;
+    transition:.3s;
 }
 
 .btn:hover{
@@ -142,15 +135,15 @@ a{
 
 .btn-whatsapp{
     background:#25D366;
-    color:#fff;
+    color:white;
 }
 
 .btn-map{
-    background:#fff;
-    color:#07583b;
+    background:white;
+    color:#155b3c;
 }
 
-/* SECTIONS */
+/* COMMON */
 
 section{
     padding:75px 6%;
@@ -158,53 +151,70 @@ section{
 
 .section-title{
     text-align:center;
-    margin-bottom:42px;
+    margin-bottom:40px;
 }
 
 .section-title small{
-    color:#c08e0c;
-    font-weight:900;
+    color:#c59615;
+    font-weight:bold;
     letter-spacing:2px;
 }
 
 .section-title h2{
-    color:#075a3b;
     font-size:38px;
-    margin:7px 0;
+    color:#0b5639;
+    margin:8px 0;
 }
 
 .section-title p{
-    color:#68766d;
+    color:#66736a;
+}
+
+/* SEARCH */
+
+.service-search{
+    max-width:700px;
+    margin:0 auto 35px;
+}
+
+.service-search input{
+    width:100%;
+    padding:16px 20px;
+    border:2px solid #dce5dc;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    background:white;
+}
+
+.service-search input:focus{
+    border-color:#0b6b45;
+    box-shadow:0 0 0 4px rgba(11,107,69,.08);
 }
 
 /* SERVICES */
 
 .services{
-    background:#f7faf7;
+    background:#f7f9f6;
 }
 
 .service-grid{
     max-width:1250px;
     margin:auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:22px;
 }
 
 .service-card{
     background:white;
-    border:1px solid #e1e9e2;
-    border-radius:17px;
-    padding:23px;
-    box-shadow:0 7px 25px rgba(15,70,40,.07);
+    border-radius:16px;
+    padding:24px;
+    border:1px solid #e2e9e2;
+    box-shadow:0 7px 25px rgba(20,60,35,.08);
+    transition:.3s;
     position:relative;
     overflow:hidden;
-    transition:.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 32px rgba(15,70,40,.14);
 }
 
 .service-card::before{
@@ -214,53 +224,101 @@ section{
     top:0;
     width:100%;
     height:5px;
-    background:linear-gradient(90deg,#08734a,#f4c542);
+    background:linear-gradient(90deg,#0b6b45,#f4c542);
 }
 
-.service-number{
-    position:absolute;
-    right:15px;
-    top:14px;
-    background:#edf7ef;
-    color:#087047;
-    font-size:12px;
-    font-weight:900;
-    padding:4px 8px;
-    border-radius:20px;
+.service-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 14px 30px rgba(20,60,35,.15);
 }
 
 .icon{
-    font-size:36px;
-    margin-bottom:7px;
+    font-size:35px;
+    margin-bottom:5px;
+}
+
+.service-number{
+    color:#a8790b;
+    font-size:13px;
+    font-weight:bold;
 }
 
 .service-card h3{
-    color:#075a3b;
-    font-size:20px;
-    margin-bottom:8px;
-    padding-right:45px;
+    color:#0b5639;
+    font-size:21px;
+    margin:3px 0 8px;
 }
 
-.service-card p{
-    color:#68746c;
+.service-card .description{
+    color:#69746c;
     font-size:14px;
-    min-height:65px;
+    margin-bottom:15px;
+}
+
+/* DOCUMENT BOX */
+
+.documents{
+    background:#f5f8f4;
+    border-radius:12px;
+    padding:15px;
+    margin-top:12px;
+    border:1px solid #e0e8df;
+}
+
+.documents-title{
+    color:#0b5639;
+    font-weight:800;
+    margin-bottom:8px;
+    font-size:15px;
+}
+
+.documents ul{
+    padding-left:20px;
+    margin:0;
+}
+
+.documents li{
+    font-size:13px;
+    color:#4e5d52;
+    margin:4px 0;
+}
+
+.note{
+    margin-top:9px;
+    font-size:12px;
+    color:#8a6710;
+    background:#fff9df;
+    border-left:3px solid #f4c542;
+    padding:7px 9px;
+    border-radius:5px;
+}
+
+.service-actions{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:16px;
+}
+
+.small-btn{
+    display:inline-block;
+    padding:8px 12px;
+    border-radius:7px;
+    text-decoration:none;
+    font-size:13px;
+    font-weight:bold;
 }
 
 .info-btn{
-    width:100%;
-    margin-top:15px;
-    border:0;
-    border-radius:8px;
-    background:#075a3b;
+    background:#0b5639;
     color:white;
-    padding:11px;
-    font-weight:800;
     cursor:pointer;
+    border:0;
 }
 
-.info-btn:hover{
-    background:#0a7b50;
+.wa-btn{
+    background:#25D366;
+    color:white;
 }
 
 /* ABOUT */
@@ -282,44 +340,45 @@ section{
     min-height:400px;
     border-radius:20px;
     background:
-    linear-gradient(rgba(0,50,30,.12),rgba(0,50,30,.12)),
+    linear-gradient(rgba(0,50,30,.15),rgba(0,50,30,.15)),
     url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=85")
     center/cover;
     box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
 .about-content h2{
-    color:#075a3b;
+    color:#0b5639;
     font-size:38px;
     margin-bottom:15px;
 }
 
 .about-content p{
-    color:#59665d;
+    color:#59645c;
     margin-bottom:15px;
 }
 
 .points{
     list-style:none;
+    margin-top:20px;
 }
 
 .points li{
-    margin:9px 0;
-    font-weight:700;
+    margin:10px 0;
+    font-weight:600;
 }
 
 .points li::before{
     content:"✓";
-    color:#12814d;
+    color:#16834e;
+    font-weight:bold;
     margin-right:10px;
-    font-weight:900;
 }
 
 /* HIGHLIGHT */
 
 .highlight{
     background:
-    linear-gradient(90deg,rgba(3,65,41,.95),rgba(3,65,41,.84)),
+    linear-gradient(90deg,rgba(5,63,39,.95),rgba(5,63,39,.82)),
     url("https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=1800&q=85")
     center/cover;
     color:white;
@@ -333,14 +392,14 @@ section{
 
 .highlight p{
     max-width:800px;
-    margin:0 auto 25px;
+    margin:auto auto 25px;
     font-size:18px;
 }
 
 /* CONTACT */
 
 .contact{
-    background:#f4f7f4;
+    background:#f4f7f3;
 }
 
 .contact-box{
@@ -354,29 +413,28 @@ section{
 .contact-card{
     background:white;
     padding:30px;
-    border-radius:17px;
-    box-shadow:0 7px 25px rgba(0,0,0,.06);
+    border-radius:16px;
+    box-shadow:0 7px 25px rgba(0,0,0,.07);
 }
 
 .contact-card h3{
-    color:#075a3b;
-    font-size:24px;
+    color:#0b5639;
     margin-bottom:15px;
+    font-size:24px;
 }
 
 .contact-item{
-    margin:12px 0;
+    margin:13px 0;
 }
 
-.contact-item a{
-    color:#075a3b;
-    font-weight:800;
+.contact-item strong{
+    color:#153b28;
 }
 
 /* FOOTER */
 
 footer{
-    background:#063b29;
+    background:#073a28;
     color:white;
     text-align:center;
     padding:35px 20px;
@@ -384,141 +442,18 @@ footer{
 
 footer h2{
     color:#f4c542;
+    margin-bottom:8px;
 }
 
 footer p{
-    color:#d9e5dc;
+    color:#d7e4db;
 }
 
 .footer-bottom{
     border-top:1px solid rgba(255,255,255,.15);
-    margin-top:22px;
-    padding-top:16px;
+    margin-top:25px;
+    padding-top:18px;
     font-size:13px;
-}
-
-/* MODAL */
-
-.modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    z-index:10000;
-    background:rgba(0,0,0,.70);
-    padding:20px;
-    overflow-y:auto;
-}
-
-.modal.show{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.modal-box{
-    width:min(850px,100%);
-    max-height:92vh;
-    overflow-y:auto;
-    background:white;
-    border-radius:20px;
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
-    animation:popup .25s ease;
-}
-
-@keyframes popup{
-    from{
-        opacity:0;
-        transform:scale(.95) translateY(15px);
-    }
-    to{
-        opacity:1;
-        transform:scale(1) translateY(0);
-    }
-}
-
-.modal-head{
-    position:sticky;
-    top:0;
-    z-index:2;
-    background:#075a3b;
-    color:white;
-    padding:20px 25px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.modal-head h2{
-    font-size:24px;
-}
-
-.close{
-    border:0;
-    background:white;
-    color:#075a3b;
-    width:38px;
-    height:38px;
-    border-radius:50%;
-    font-size:23px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.modal-body{
-    padding:25px;
-}
-
-.modal-section{
-    margin-bottom:22px;
-}
-
-.modal-section h3{
-    color:#075a3b;
-    margin-bottom:8px;
-    font-size:20px;
-}
-
-.modal-section ul{
-    padding-left:22px;
-}
-
-.modal-section li{
-    margin:5px 0;
-}
-
-.notice{
-    background:#fff8df;
-    border-left:5px solid #f0bb18;
-    padding:12px 15px;
-    border-radius:7px;
-    margin-top:12px;
-}
-
-.modal-actions{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:20px;
-}
-
-/* FLOATING WHATSAPP */
-
-.float-wa{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-    width:58px;
-    height:58px;
-    border-radius:50%;
-    background:#25D366;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:28px;
-    text-decoration:none;
-    box-shadow:0 7px 22px rgba(0,0,0,.25);
-    z-index:9998;
 }
 
 /* MOBILE */
@@ -539,7 +474,7 @@ footer p{
 
     .hero{
         min-height:620px;
-        padding:60px 7%;
+        padding:65px 7%;
     }
 
     .hero h1{
@@ -558,6 +493,10 @@ footer p{
         font-size:30px;
     }
 
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
     .about-box,
     .contact-box{
         grid-template-columns:1fr;
@@ -570,25 +509,14 @@ footer p{
     .highlight h2{
         font-size:30px;
     }
-
-    .modal{
-        padding:10px;
-    }
-
-    .modal-head h2{
-        font-size:19px;
-    }
-
-    .modal-body{
-        padding:18px;
-    }
-
 }
 
 </style>
 </head>
 
 <body>
+
+<!-- NAVBAR -->
 
 <nav class="navbar">
 
@@ -598,13 +526,15 @@ footer p{
 
 <ul class="nav-links">
 <li><a href="#home">मुख्यपृष्ठ</a></li>
-<li><a href="#services">सेवा</a></li>
+<li><a href="#services">सर्व सेवा</a></li>
 <li><a href="#about">आमच्याबद्दल</a></li>
 <li><a href="#contact">संपर्क</a></li>
 </ul>
 
 </nav>
 
+
+<!-- HERO -->
 
 <header class="hero" id="home">
 
@@ -617,7 +547,7 @@ footer p{
 <h1>
 शेतकरी आणि<br>
 <span>नागरिकांसाठी</span><br>
-सर्व ऑनलाइन सेवा एकाच ठिकाणी
+सर्व ऑनलाइन सेवा एकाच ठिकाणी.
 </h1>
 
 <p>
@@ -651,25 +581,1106 @@ target="_blank">
 </header>
 
 
+<!-- SERVICES -->
+
 <section class="services" id="services">
 
 <div class="section-title">
 
-<small>OUR SERVICES</small>
+<small>MAHARUDRA ONLINE CENTER</small>
 
-<h2>आमच्या सेवा</h2>
+<h2>आमच्या सर्व ऑनलाइन सेवा</h2>
 
 <p>
-खालील सेवांवर क्लिक करून त्या सेवेसाठी आवश्यक कागदपत्रे,
-प्रक्रिया व अधिक माहिती पाहा.
+प्रत्येक सेवेसाठी आवश्यक कागदपत्रांची माहिती खाली दिली आहे.
+सेवेच्या नावावरून शोधण्यासाठी Search वापरा.
 </p>
 
 </div>
 
-<div class="service-grid" id="serviceGrid"></div>
+
+<div class="service-search">
+
+<input
+type="text"
+id="serviceSearch"
+placeholder="🔎 सेवा शोधा... उदा. उत्पन्न, जात, EWS, PM-KISAN..."
+onkeyup="searchServices()">
+
+</div>
+
+
+<div class="service-grid" id="serviceGrid">
+
+
+<!-- 01 -->
+
+<div class="service-card">
+
+<div class="icon">🌾</div>
+
+<div class="service-number">सेवा क्र. 01</div>
+
+<h3>PM-KISAN योजना</h3>
+
+<p class="description">
+PM-KISAN नोंदणी, KYC, दुरुस्ती आणि वारसाच्या नावाने लाभ हस्तांतरणासाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>अर्जदाराचा आधार कार्ड</li>
+<li>7/12 उतारा</li>
+<li>8-A उतारा</li>
+<li>बँक पासबुक</li>
+<li>मोबाईल नंबर</li>
+<li>वारस प्रकरण असल्यास फेरफार उतारा</li>
+<li>मयत व्यक्तीचे मृत्यू प्रमाणपत्र</li>
+</ul>
+
+</div>
+
+<div class="service-actions">
+
+<a class="small-btn wa-btn"
+href="https://wa.me/917020764054?text=PM-KISAN%20योजनेसाठी%20माहिती%20हवी%20आहे."
+target="_blank">
+💬 चौकशी
+</a>
+
+</div>
+
+</div>
+
+
+<!-- 02 -->
+
+<div class="service-card">
+
+<div class="icon">💰</div>
+
+<div class="service-number">सेवा क्र. 02</div>
+
+<h3>पुण्यश्लोक अहिल्यादेवी होळकर शेतकरी कर्जमुक्ती योजना</h3>
+
+<p class="description">
+शेतकरी कर्जमुक्ती योजनेशी संबंधित ऑनलाइन माहिती, यादी तपासणी व आवश्यक सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>बँक पासबुक</li>
+<li>कर्ज खाते / कर्जाची माहिती</li>
+<li>7/12 उतारा</li>
+<li>8-A उतारा</li>
+<li>मोबाईल नंबर</li>
+</ul>
+
+<div class="note">
+कागदपत्रे व पात्रता योजनेच्या नियमांनुसार बदलू शकतात.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 03 -->
+
+<div class="service-card">
+
+<div class="icon">🌱</div>
+
+<div class="service-number">सेवा क्र. 03</div>
+
+<h3>प्रधानमंत्री पीक विमा योजना</h3>
+
+<p class="description">
+पीक विमा अर्ज, ई-पिक पाहणी आणि संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>7/12 उतारा</li>
+<li>8-A उतारा</li>
+<li>बँक पासबुक</li>
+<li>पिकाची माहिती</li>
+<li>मोबाईल नंबर</li>
+<li>ई-पिक पाहणीची माहिती / नोंद आवश्यकतेनुसार</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 04 -->
+
+<div class="service-card">
+
+<div class="icon">🏥</div>
+
+<div class="service-number">सेवा क्र. 04</div>
+
+<h3>आयुष्मान भारत PM-JAY कार्ड</h3>
+
+<p class="description">
+पात्रता तपासणी, आयुष्मान भारत कार्ड काढणे व कार्ड प्रिंट करून मिळणे.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>रेशन कार्ड / कुटुंबाची माहिती</li>
+<li>मोबाईल नंबर</li>
+<li>पात्रतेनुसार उपलब्ध ओळखपत्र</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 05 -->
+
+<div class="service-card">
+
+<div class="icon">📜</div>
+
+<div class="service-number">सेवा क्र. 05</div>
+
+<h3>डिजिटल 7/12 व 8-A उतारा</h3>
+
+<p class="description">
+डिजिटल सातबारा व 8-A उतारा मिळवण्यासाठी ऑनलाइन सुविधा.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक माहिती
+</div>
+
+<ul>
+<li>गट नंबर / सर्वे नंबर</li>
+<li>गावाचे नाव</li>
+<li>तालुका व जिल्हा</li>
+<li>मालकाचे नाव</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 06 -->
+
+<div class="service-card">
+
+<div class="icon">🗂️</div>
+
+<div class="service-number">सेवा क्र. 06</div>
+
+<h3>ई-फेरफार / जमीनविषयक ऑनलाइन सेवा</h3>
+
+<p class="description">
+ई-फेरफार, जमीन नोंद व संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>7/12 उतारा</li>
+<li>8-A उतारा</li>
+<li>खरेदीखत / वारस कागदपत्रे - लागू असल्यास</li>
+<li>मृत्यू प्रमाणपत्र - वारस प्रकरणात</li>
+<li>आधार कार्ड</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 07 -->
+
+<div class="service-card">
+
+<div class="icon">🏛️</div>
+
+<div class="service-number">सेवा क्र. 07</div>
+
+<h3>उद्यम / MSME Registration</h3>
+
+<p class="description">
+उद्यम नोंदणी व MSME संबंधित ऑनलाइन अर्जासाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे / माहिती
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>PAN कार्ड</li>
+<li>मोबाईल नंबर</li>
+<li>ई-मेल ID</li>
+<li>व्यवसायाची माहिती</li>
+<li>बँक खात्याची माहिती</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 08 -->
+
+<div class="service-card">
+
+<div class="icon">📋</div>
+
+<div class="service-number">सेवा क्र. 08</div>
+
+<h3>जात प्रमाणपत्र</h3>
+
+<p class="description">
+जात प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्रांच्या प्रक्रियेत सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>जात नमूद असलेला शाळा सोडल्याचा दाखला / शैक्षणिक पुरावा</li>
+<li>वडील / रक्त नातेवाईकांचे जुने जात पुरावे - उपलब्ध असल्यास</li>
+<li>रहिवासी पुरावा</li>
+<li>जात प्रमाणपत्रासाठी आवश्यक इतर पुरावे - प्रकरणानुसार</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 09 -->
+
+<div class="service-card">
+
+<div class="icon">🏠</div>
+
+<div class="service-number">सेवा क्र. 09</div>
+
+<h3>रहिवासी / अधिवास प्रमाणपत्र</h3>
+
+<p class="description">
+महाराष्ट्रातील रहिवासाचा अधिकृत पुरावा मिळवण्यासाठी ऑनलाइन अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>जन्म दाखला / शाळा सोडल्याचा दाखला</li>
+<li>रहिवासाचा पुरावा</li>
+<li>रेशन कार्ड - लागू असल्यास</li>
+<li>घरपट्टी / जमीन कागदपत्रे - उपलब्ध असल्यास</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 10 -->
+
+<div class="service-card">
+
+<div class="icon">💵</div>
+
+<div class="service-number">सेवा क्र. 10</div>
+
+<h3>उत्पन्न प्रमाणपत्र</h3>
+
+<p class="description">
+कुटुंबाच्या वार्षिक उत्पन्नाचा अधिकृत दाखला मिळवण्यासाठी ऑनलाइन अर्ज.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>रेशन कार्ड</li>
+<li>7/12 उतारा - शेती असल्यास</li>
+<li>पगाराचा पुरावा - नोकरी असल्यास</li>
+<li>उत्पन्नाचा इतर पुरावा - लागू असल्यास</li>
+<li>बँक पासबुक - आवश्यकतेनुसार</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 11 -->
+
+<div class="service-card">
+
+<div class="icon">🎓</div>
+
+<div class="service-number">सेवा क्र. 11</div>
+
+<h3>EWS प्रमाणपत्र</h3>
+
+<p class="description">
+आर्थिकदृष्ट्या दुर्बल घटकासाठी EWS प्रमाणपत्राच्या अर्जासाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>उत्पन्न प्रमाणपत्र</li>
+<li>रेशन कार्ड</li>
+<li>7/12 उतारा - शेती असल्यास</li>
+<li>मालमत्ता / घराचा पुरावा - लागू असल्यास</li>
+<li>इतर आवश्यक मालमत्ता कागदपत्रे - प्रकरणानुसार</li>
+</ul>
+
+<div class="note">
+EWS पात्रता उत्पन्नासोबत शासनाने निश्चित केलेल्या मालमत्ता निकषांवरही अवलंबून असते.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 12 -->
+
+<div class="service-card">
+
+<div class="icon">📑</div>
+
+<div class="service-number">सेवा क्र. 12</div>
+
+<h3>Non-Creamy Layer प्रमाणपत्र</h3>
+
+<p class="description">
+OBC/VJNT/SBC इत्यादी पात्र प्रवर्गांसाठी Non-Creamy Layer प्रमाणपत्र.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>जात प्रमाणपत्र</li>
+<li>उत्पन्न प्रमाणपत्र</li>
+<li>आधार कार्ड</li>
+<li>रेशन कार्ड</li>
+<li>पालकांचे उत्पन्न / सेवा संबंधित पुरावे - लागू असल्यास</li>
+<li>इतर जात व उत्पन्न पुरावे - प्रकरणानुसार</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 13 -->
+
+<div class="service-card">
+
+<div class="icon">👴</div>
+
+<div class="service-number">सेवा क्र. 13</div>
+
+<h3>ज्येष्ठ नागरिक प्रमाणपत्र</h3>
+
+<p class="description">
+ज्येष्ठ नागरिकांसाठी वयाचा अधिकृत पुरावा व प्रमाणपत्रासाठी अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>जन्म दाखला / शाळा सोडल्याचा दाखला</li>
+<li>वयाचा वैध पुरावा</li>
+<li>रहिवासी पुरावा</li>
+<li>पासपोर्ट फोटो - आवश्यकतेनुसार</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 14 -->
+
+<div class="service-card">
+
+<div class="icon">👨‍🌾</div>
+
+<div class="service-number">सेवा क्र. 14</div>
+
+<h3>भूमिहीन कृषी शेतमजूर प्रमाणपत्र</h3>
+
+<p class="description">
+भूमिहीन कृषी शेतमजूर प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्र सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>रेशन कार्ड</li>
+<li>रहिवासी पुरावा</li>
+<li>जमीन नसल्याचा / उपलब्ध जमीन नोंदीचा पुरावा</li>
+<li>उत्पन्न प्रमाणपत्र - लागू असल्यास</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 15 -->
+
+<div class="service-card">
+
+<div class="icon">🔥</div>
+
+<div class="service-number">सेवा क्र. 15</div>
+
+<h3>PM Ujjwala 2.0</h3>
+
+<p class="description">
+प्रधानमंत्री उज्ज्वला योजना 2.0 अंतर्गत पात्र लाभार्थ्यांसाठी अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>रेशन कार्ड / कुटुंब तपशील</li>
+<li>बँक खाते तपशील</li>
+<li>मोबाईल नंबर</li>
+<li>पात्रतेनुसार आवश्यक घोषणा / कागदपत्रे</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 16 -->
+
+<div class="service-card">
+
+<div class="icon">🪪</div>
+
+<div class="service-number">सेवा क्र. 16</div>
+
+<h3>Maha ID / Maha Sarathi Card</h3>
+
+<p class="description">
+महा ID व संबंधित डिजिटल कार्ड सेवांसाठी ऑनलाइन सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>मोबाईल नंबर</li>
+<li>फोटो - आवश्यकतेनुसार</li>
+<li>योजनेनुसार आवश्यक इतर कागदपत्रे</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 17 -->
+
+<div class="service-card">
+
+<div class="icon">💔</div>
+
+<div class="service-number">सेवा क्र. 17</div>
+
+<h3>घटस्फोटित प्रमाणपत्र / Divorcee Certificate</h3>
+
+<p class="description">
+घटस्फोट झालेल्या महिलेसाठी घटस्फोटित म्हणून प्रमाणपत्र मिळवण्यासाठी अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>घटस्फोटाचा अंतिम कोर्ट आदेश / Decree</li>
+<li>आधार कार्ड</li>
+<li>रहिवासी पुरावा</li>
+<li>रेशन कार्ड - आवश्यकतेनुसार</li>
+<li>फोटो - आवश्यकतेनुसार</li>
+<li>इतर कागदपत्रे - कार्यालयाच्या मागणीनुसार</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 18 -->
+
+<div class="service-card">
+
+<div class="icon">♿</div>
+
+<div class="service-number">सेवा क्र. 18</div>
+
+<h3>अपंगत्व प्रमाणपत्र / UDID</h3>
+
+<p class="description">
+अपंगत्वाचे वैद्यकीय मूल्यांकन व UDID संबंधित ऑनलाइन अर्जासाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>पासपोर्ट फोटो</li>
+<li>जुने मेडिकल रिपोर्ट - असल्यास</li>
+<li>अपंगत्वाशी संबंधित वैद्यकीय कागदपत्रे - असल्यास</li>
+<li>मोबाईल नंबर</li>
+</ul>
+
+<div class="note">
+वैद्यकीय तपासणीसाठी संबंधित रुग्णालय / वैद्यकीय मंडळासमोर उपस्थित राहणे आवश्यक असू शकते.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 19 -->
+
+<div class="service-card">
+
+<div class="icon">🥛</div>
+
+<div class="service-number">सेवा क्र. 19</div>
+
+<h3>No Milk Trace Certificate</h3>
+
+<p class="description">
+दूध व्यवसाय / दुधाळ जनावरे नसल्याबाबत आवश्यक प्रमाणपत्रासाठी अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>रेशन कार्ड</li>
+<li>रहिवासी पुरावा</li>
+<li>स्थानिक अधिकारी / ग्रामपंचायत अहवाल - लागू असल्यास</li>
+<li>स्वयंघोषणा / प्रतिज्ञापत्र - आवश्यक असल्यास</li>
+</ul>
+
+<div class="note">
+स्थानिक कार्यालयाच्या नियमांनुसार प्रत्यक्ष पडताळणी किंवा अतिरिक्त कागदपत्रे लागू शकतात.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 20 -->
+
+<div class="service-card">
+
+<div class="icon">💼</div>
+
+<div class="service-number">सेवा क्र. 20</div>
+
+<h3>बेरोजगार प्रमाणपत्र</h3>
+
+<p class="description">
+अर्जदार बेरोजगार असल्याबाबत प्रमाणपत्रासाठी ऑनलाइन अर्ज व मार्गदर्शन.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>शैक्षणिक कागदपत्रे - आवश्यकतेनुसार</li>
+<li>रहिवासी पुरावा</li>
+<li>बँक पासबुक - योजनेनुसार</li>
+<li>बेरोजगार असल्याबाबत स्वयंघोषणा / प्रतिज्ञापत्र - लागू असल्यास</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 21 -->
+
+<div class="service-card">
+
+<div class="icon">👨‍👩‍👧</div>
+
+<div class="service-number">सेवा क्र. 21</div>
+
+<h3>एकल पालक प्रमाणपत्र / Single Parent Certificate</h3>
+
+<p class="description">
+विधवा, विधुर, घटस्फोटित किंवा इतर लागू परिस्थितीत एकल पालकत्वाचा पुरावा.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>पालकाचे आधार कार्ड</li>
+<li>मुलांचे जन्म दाखले</li>
+<li>मृत्यू प्रमाणपत्र - लागू असल्यास</li>
+<li>घटस्फोटाचा कोर्ट आदेश - लागू असल्यास</li>
+<li>पोलिस तक्रार / इतर पुरावा - जोडीदार बेपत्ता/सोडून गेल्यास, लागू असल्यास</li>
+<li>रहिवासी पुरावा</li>
+<li>इतर कागदपत्रे - प्रकरणानुसार</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 22 -->
+
+<div class="service-card">
+
+<div class="icon">🌾</div>
+
+<div class="service-number">सेवा क्र. 22</div>
+
+<h3>लहान व सीमांत शेतकरी प्रमाणपत्र</h3>
+
+<p class="description">
+लहान / सीमांत शेतकरी म्हणून पात्रता व प्रमाणपत्रासाठी ऑनलाइन अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>चालू 7/12 उतारा</li>
+<li>8-A उतारा</li>
+<li>जमिनीची नोंद / मालकीचा पुरावा</li>
+<li>रहिवासी पुरावा - आवश्यकतेनुसार</li>
+<li>बँक पासबुक - योजनेनुसार</li>
+</ul>
+
+<div class="note">
+लहान / सीमांत शेतकरी वर्गीकरण संबंधित शासन निकष व जमिनीच्या नोंदीवर आधारित असते.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 23 -->
+
+<div class="service-card">
+
+<div class="icon">📜</div>
+
+<div class="service-number">सेवा क्र. 23</div>
+
+<h3>जाती वैधता प्रमाणपत्र / Caste Validity Certificate</h3>
+
+<p class="description">
+जात प्रमाणपत्राची वैधता तपासण्यासाठी जात पडताळणी समितीकडे ऑनलाइन अर्ज.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>जात प्रमाणपत्र</li>
+<li>आधार कार्ड</li>
+<li>शाळा सोडल्याचा दाखला / शैक्षणिक नोंदी</li>
+<li>वडील / रक्त नातेवाईकांचे जुने जात पुरावे</li>
+<li>रक्त नातेवाईकांची जात वैधता - असल्यास</li>
+<li>इतर जुने महसूल / शैक्षणिक पुरावे</li>
+<li>अर्जाच्या कारणानुसार आवश्यक कागदपत्रे</li>
+</ul>
+
+<div class="note">
+प्रकरणानुसार कागदपत्रे व चौकशी बदलू शकते.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 24 -->
+
+<div class="service-card">
+
+<div class="icon">💵</div>
+
+<div class="service-number">सेवा क्र. 24</div>
+
+<h3>उत्पन्न प्रमाणपत्र - अद्ययावत / Renewal</h3>
+
+<p class="description">
+शिष्यवृत्ती, प्रवेश, योजना किंवा इतर कारणांसाठी आवश्यक चालू उत्पन्न प्रमाणपत्र.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>रेशन कार्ड</li>
+<li>7/12 उतारा - शेती असल्यास</li>
+<li>उत्पन्नाचे पुरावे</li>
+<li>मागील उत्पन्न प्रमाणपत्र - उपलब्ध असल्यास</li>
+<li>नोकरी / व्यवसाय / शेतीचे संबंधित पुरावे</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 25 -->
+
+<div class="service-card">
+
+<div class="icon">💧</div>
+
+<div class="service-number">सेवा क्र. 25</div>
+
+<h3>नानासाहेब देशमुख कृषी संजीवनी योजना 2.0 / PoCRA 2.0</h3>
+
+<p class="description">
+पात्र गावांतील शेतकऱ्यांसाठी विविध कृषी घटकांच्या ऑनलाइन अर्जासाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>7/12 उतारा</li>
+<li>8-A उतारा</li>
+<li>बँक पासबुक</li>
+<li>मोबाईल नंबर</li>
+<li>जात प्रमाणपत्र - लागू असल्यास</li>
+<li>स्वयंघोषणा / संबंधित कागदपत्रे - घटकानुसार</li>
+<li>पूर्वी लाभ घेतल्याचा पुरावा - लागू असल्यास</li>
+</ul>
+
+<div class="note">
+योजनेतील घटक, अनुदान व कागदपत्रे पात्रता आणि शासनाच्या चालू मार्गदर्शक सूचनांनुसार बदलू शकतात.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 26 -->
+
+<div class="service-card">
+
+<div class="icon">☀️</div>
+
+<div class="service-number">सेवा क्र. 26</div>
+
+<h3>मागेल त्याला सोलार कृषी पंप योजना</h3>
+
+<p class="description">
+सौर कृषी पंपासाठी ऑनलाइन अर्ज व पात्रता प्रक्रियेसाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>7/12 उतारा</li>
+<li>8-A उतारा</li>
+<li>बँक पासबुक</li>
+<li>रद्द चेक - आवश्यकतेनुसार</li>
+<li>मोबाईल नंबर</li>
+<li>जात प्रमाणपत्र - लागू असल्यास</li>
+<li>वीज कनेक्शन / वीज बिल - लागू असल्यास</li>
+<li>पाण्याच्या स्रोताची माहिती - योजनेनुसार</li>
+</ul>
+
+<div class="note">
+अनुदानाची टक्केवारी, पंपाची क्षमता व पात्रता चालू शासन नियमांनुसार तपासली जाईल.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 27 -->
+
+<div class="service-card">
+
+<div class="icon">🟡</div>
+
+<div class="service-number">सेवा क्र. 27</div>
+
+<h3>हळद प्रक्रिया मशीन योजना</h3>
+
+<p class="description">
+हळद प्रक्रिया, पॉलिशिंग व हळद काढणी मशीनसाठी ऑनलाइन अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>7/12 उतारा - शेतकरी असल्यास</li>
+<li>8-A उतारा - लागू असल्यास</li>
+<li>बँक पासबुक</li>
+<li>मोबाईल नंबर</li>
+<li>जात प्रमाणपत्र - लागू असल्यास</li>
+<li>घटकानुसार आवश्यक कागदपत्रे</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 28 -->
+
+<div class="service-card">
+
+<div class="icon">🔐</div>
+
+<div class="service-number">सेवा क्र. 28</div>
+
+<h3>विविध KYC सेवा</h3>
+
+<p class="description">
+शासकीय योजना, बँकिंग व विविध ऑनलाइन सेवांसाठी KYC प्रक्रियेसाठी सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 सामान्यतः आवश्यक कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>PAN कार्ड - लागू असल्यास</li>
+<li>बँक पासबुक</li>
+<li>मोबाईल नंबर</li>
+<li>योजनेनुसार इतर कागदपत्रे</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<!-- 29 -->
+
+<div class="service-card">
+
+<div class="icon">📝</div>
+
+<div class="service-number">सेवा क्र. 29</div>
+
+<h3>विविध शासकीय ऑनलाइन फॉर्म</h3>
+
+<p class="description">
+विविध सरकारी योजना, प्रमाणपत्रे, अर्ज व ऑनलाइन सेवांसाठी फॉर्म भरण्याची सुविधा.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 सामान्य कागदपत्रे
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>मोबाईल नंबर</li>
+<li>बँक पासबुक</li>
+<li>रेशन कार्ड</li>
+<li>योजनेनुसार प्रमाणपत्रे</li>
+<li>योजनेनुसार जमीन / उत्पन्न / जात कागदपत्रे</li>
+</ul>
+
+<div class="note">
+प्रत्येक योजनेनुसार आवश्यक कागदपत्रांची यादी वेगळी असू शकते.
+</div>
+
+</div>
+
+</div>
+
+
+<!-- 30 -->
+
+<div class="service-card">
+
+<div class="icon">👩‍🌾</div>
+
+<div class="service-number">सेवा क्र. 30</div>
+
+<h3>महिला, विद्यार्थी व नागरिकांसाठी योजना अर्ज</h3>
+
+<p class="description">
+शिष्यवृत्ती, सामाजिक सुरक्षा, महिला योजना, घरकुल व इतर पात्र योजनांसाठी ऑनलाइन अर्ज सहाय्य.
+</p>
+
+<div class="documents">
+
+<div class="documents-title">
+📄 कागदपत्रे - योजनानुसार
+</div>
+
+<ul>
+<li>आधार कार्ड</li>
+<li>बँक पासबुक</li>
+<li>मोबाईल नंबर</li>
+<li>उत्पन्न प्रमाणपत्र - लागू असल्यास</li>
+<li>जात प्रमाणपत्र - लागू असल्यास</li>
+<li>रहिवासी प्रमाणपत्र - लागू असल्यास</li>
+<li>वयाचा पुरावा - लागू असल्यास</li>
+<li>शैक्षणिक कागदपत्रे - विद्यार्थी योजनांसाठी</li>
+</ul>
+
+</div>
+
+</div>
+
+
+</div>
 
 </section>
 
+
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
@@ -690,7 +1701,7 @@ target="_blank">
 <p>
 अर्ज प्रक्रिया, कागदपत्रे, KYC, प्रमाणपत्रे आणि
 विविध शासकीय योजनांसाठी आवश्यक ऑनलाइन सहाय्य
-उपलब्ध करून दिले जाते.
+विश्वासाने उपलब्ध करून दिले जाते.
 </p>
 
 <ul class="points">
@@ -698,7 +1709,7 @@ target="_blank">
 <li>शेतकरी बांधवांसाठी विशेष सहाय्य</li>
 <li>विविध शासकीय योजनांची माहिती</li>
 <li>डिजिटल सेवा एकाच ठिकाणी</li>
-<li>कागदपत्रांबाबत मार्गदर्शन</li>
+<li>कागदपत्रांबाबत योग्य मार्गदर्शन</li>
 </ul>
 
 </div>
@@ -707,6 +1718,8 @@ target="_blank">
 
 </section>
 
+
+<!-- HIGHLIGHT -->
 
 <section class="highlight">
 
@@ -727,6 +1740,8 @@ target="_blank">
 </section>
 
 
+<!-- CONTACT -->
+
 <section class="contact" id="contact">
 
 <div class="section-title">
@@ -738,6 +1753,7 @@ target="_blank">
 <p>ऑनलाइन सेवांसाठी आजच संपर्क करा.</p>
 
 </div>
+
 
 <div class="contact-box">
 
@@ -752,11 +1768,15 @@ target="_blank">
 <div class="contact-item">
 देवी मंदिराच्या पाठीमागे,<br>
 आठवडी बाजार रोड,<br>
-आंबेडकर चौक, फुलसावंगी,<br>
+आंबेडकर चौक, फुलसावंगी.
+</div>
+
+<div class="contact-item">
 ता. उमरखेड, जि. यवतमाळ
 </div>
 
 </div>
+
 
 <div class="contact-card">
 
@@ -789,6 +1809,8 @@ target="_blank">
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
 
 <h2>🌿 महारुद्र ऑनलाइन सेंटर</h2>
@@ -806,327 +1828,37 @@ target="_blank">
 </footer>
 
 
-<a class="float-wa"
-href="https://wa.me/917020764054"
-target="_blank"
-aria-label="WhatsApp">
-💬
-</a>
-
-
-<!-- MODAL -->
-
-<div class="modal" id="serviceModal">
-
-<div class="modal-box">
-
-<div class="modal-head">
-
-<h2 id="modalTitle"></h2>
-
-<button class="close" onclick="closeModal()">
-×
-</button>
-
-</div>
-
-<div class="modal-body" id="modalBody"></div>
-
-</div>
-
-</div>
-
-
 <script>
 
-/* =====================================================
-   MAHARUDRA ONLINE CENTER
-   SERVICE DATABASE
-===================================================== */
+/* SERVICE SEARCH */
 
-const services = [
+function searchServices(){
 
-{
-id:1,
-icon:"🌾",
-title:"PM-KISAN योजना",
-short:"PM-KISAN अर्ज, KYC व वारसाच्या नावाने लाभ हस्तांतरणासाठी सहाय्य.",
-info:"प्रधानमंत्री किसान सन्मान निधी योजनेशी संबंधित अर्ज, KYC, लाभाची माहिती आणि पात्र प्रकरणांमध्ये वारसाच्या नावाने लाभ हस्तांतरणासाठी ऑनलाइन सहाय्य.",
-docs:[
-"आधार कार्ड",
-"7/12 उतारा",
-"8-A उतारा",
-"बँक पासबुक",
-"मोबाईल नंबर",
-"वारसाच्या प्रकरणात मृत्यू प्रमाणपत्र व फेरफार उतारा",
-"वारसाच्या प्रकरणात आवश्यक नातेसंबंधाचे कागदपत्र"
-],
-process:[
-"कागदपत्रांची प्राथमिक तपासणी",
-"ऑनलाइन अर्ज / आवश्यक दुरुस्ती",
-"पोर्टलवरील स्थिती तपासणी"
-],
-note:"अंतिम कागदपत्रांची आवश्यकता प्रकरणानुसार व संबंधित पोर्टलच्या सूचनेनुसार बदलू शकते."
-},
+    let input =
+    document.getElementById("serviceSearch")
+    .value
+    .toLowerCase()
+    .trim();
 
-{
-id:2,
-icon:"💰",
-title:"शेतकरी कर्जमुक्ती / कर्जसंबंधित सेवा",
-short:"शेतकरी कर्जमाफी व संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.",
-info:"शेतकरी कर्जमाफी / कर्जसंबंधित शासकीय योजनांमध्ये ऑनलाइन माहिती, अर्ज व उपलब्ध सुविधेनुसार सहाय्य.",
-docs:[
-"आधार कार्ड",
-"बँक पासबुक",
-"कर्ज खाते / कर्जाची माहिती",
-"7/12 उतारा",
-"8-A उतारा",
-"मोबाईल नंबर"
-],
-process:[
-"योजनेतील पात्रता तपासणी",
-"कागदपत्रांची पडताळणी",
-"ऑनलाइन उपलब्ध असल्यास अर्ज / दुरुस्ती",
-"स्थिती तपासणी"
-],
-note:"कर्जमाफीचा लाभ शासनाच्या त्या वेळच्या नियम व पात्रतेनुसार असतो."
-},
+    let cards =
+    document.querySelectorAll(".service-card");
 
-{
-id:3,
-icon:"🌱",
-title:"प्रधानमंत्री फसल विमा योजना",
-short:"पीक विमा, ई-पिक पाहणी व संबंधित ऑनलाइन सहाय्य.",
-info:"प्रधानमंत्री फसल विमा योजना, पीक विमा अर्ज व ई-पिक पाहणीशी संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.",
-docs:[
-"आधार कार्ड",
-"7/12 उतारा",
-"8-A उतारा",
-"बँक पासबुक",
-"पीक / पिकाची माहिती",
-"मोबाईल नंबर"
-],
-process:[
-"पिक व जमीन तपशील तपासणी",
-"उपलब्ध पोर्टलवर अर्ज प्रक्रिया",
-"ई-पिक पाहणीसंबंधी मार्गदर्शन",
-"अर्जाची पावती / स्थिती जतन"
-],
-note:"पीक विम्याची अंतिम पात्रता, हंगाम व अंतिम तारीख शासन/विमा कंपनीच्या सूचनेनुसार असते."
-},
+    cards.forEach(function(card){
 
-{
-id:4,
-icon:"🏥",
-title:"आयुष्मान भारत PM-JAY कार्ड",
-short:"पात्रता तपासणी व आयुष्मान कार्ड संबंधित सहाय्य.",
-info:"आयुष्मान भारत PM-JAY अंतर्गत पात्रता तपासणी, कार्ड तयार करण्याची प्रक्रिया व प्रिंटसाठी सहाय्य.",
-docs:[
-"आधार कार्ड",
-"मोबाईल नंबर",
-"उपलब्ध असल्यास रेशन कार्ड / कुटुंबाची माहिती"
-],
-process:[
-"लाभार्थी पात्रता तपासणी",
-"आवश्यक e-KYC प्रक्रिया",
-"कार्ड तयार करण्यासाठी ऑनलाइन प्रक्रिया",
-"कार्ड प्रिंट"
-],
-note:"कार्डाची पात्रता शासनाच्या लाभार्थी डेटाबेसवर अवलंबून असते."
-},
+        let text =
+        card.innerText.toLowerCase();
 
-{
-id:5,
-icon:"📜",
-title:"डिजिटल 7/12 व 8-A",
-short:"डिजिटल सातबारा व 8-A उतारा मिळवण्यासाठी सुविधा.",
-info:"जमिनीचा डिजिटल 7/12 व 8-A उतारा मिळवण्यासाठी ऑनलाइन सुविधा.",
-docs:[
-"गट नंबर / सर्वे नंबर",
-"गावाचे नाव",
-"तालुका व जिल्हा",
-"मालकाचे नाव"
-],
-process:[
-"जमिनीची माहिती शोधणे",
-"उतारा डाउनलोड / प्रिंट",
-"आवश्यक असल्यास संबंधित नोंदी तपासणे"
-],
-note:"अधिकृत उताऱ्याचा प्रकार वापराच्या उद्देशानुसार वेगळा असू शकतो."
-},
+        if(text.includes(input)){
+            card.style.display="";
+        }else{
+            card.style.display="none";
+        }
 
-{
-id:6,
-icon:"🗂️",
-title:"ई-फेरफार सेवा",
-short:"जमीन फेरफार व संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.",
-info:"जमीन मालकी, वारस, खरेदी-विक्री किंवा इतर फेरफार नोंदींसाठी उपलब्ध ऑनलाइन प्रक्रियेत सहाय्य.",
-docs:[
-"आधार कार्ड",
-"7/12 उतारा",
-"8-A उतारा",
-"फेरफाराशी संबंधित दस्तऐवज",
-"मृत्यू प्रमाणपत्र - वारस प्रकरणात",
-"नोंदणी दस्त / संबंधित कागदपत्र - लागू असल्यास"
-],
-process:[
-"फेरफाराचा प्रकार तपासणे",
-"संबंधित कागदपत्रे तपासणे",
-"ऑनलाइन उपलब्ध प्रक्रियेनुसार अर्ज / स्थिती तपासणी"
-],
-note:"फेरफाराचा अंतिम निर्णय संबंधित महसूल प्राधिकरणाकडून होतो."
-},
+    });
 
-{
-id:7,
-icon:"🏛️",
-title:"उद्यम / MSME Registration",
-short:"उद्यम नोंदणी व MSME संबंधित ऑनलाइन सहाय्य.",
-info:"सूक्ष्म, लघु व मध्यम उद्योगांसाठी Udyam Registration प्रक्रियेत ऑनलाइन सहाय्य.",
-docs:[
-"आधार कार्ड",
-"PAN",
-"मोबाईल नंबर",
-"ई-मेल",
-"व्यवसायाची मूलभूत माहिती",
-"बँक खाते माहिती - लागू असल्यास"
-],
-process:[
-"व्यवसायाची माहिती घेणे",
-"अधिकृत पोर्टलवर नोंदणी",
-"OTP / आवश्यक पडताळणी",
-"Udyam Registration संबंधित कागदपत्र प्राप्त करणे"
-],
-note:"नोंदणी करताना अधिकृत पोर्टलवरील माहितीच अंतिम मानावी."
-},
+}
 
-{
-id:8,
-icon:"📋",
-title:"जात प्रमाणपत्र",
-short:"जात प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्र मार्गदर्शन.",
-info:"महाराष्ट्रातील पात्र अर्जदारांसाठी जात प्रमाणपत्राच्या ऑनलाइन अर्ज प्रक्रियेत सहाय्य.",
-docs:[
-"ओळखीचा पुरावा",
-"पत्त्याचा पुरावा",
-"जात दर्शवणारे जुने शासकीय / शैक्षणिक कागदपत्र",
-"शाळा सोडल्याचा दाखला - उपलब्ध असल्यास",
-"वडील / रक्ताच्या नातेवाईकांचे जात प्रमाणपत्र - उपलब्ध असल्यास",
-"आवश्यक असल्यास प्रतिज्ञापत्र"
-],
-process:[
-"जात व कागदपत्रांची प्राथमिक तपासणी",
-"ऑनलाइन अर्ज",
-"संबंधित कार्यालयाची पडताळणी",
-"प्रमाणपत्राची स्थिती तपासणी"
-],
-note:"जात प्रमाणपत्रासाठी आवश्यक पुरावे प्रकरणानुसार बदलू शकतात."
-},
+</script>
 
-{
-id:9,
-icon:"🏠",
-title:"रहिवासी / अधिवास प्रमाणपत्र",
-short:"Domicile / Age-Nationality-Domicile सेवेसाठी सहाय्य.",
-info:"महाराष्ट्रातील रहिवास / अधिवास सिद्ध करण्यासाठी संबंधित प्रमाणपत्राच्या ऑनलाइन प्रक्रियेत सहाय्य.",
-docs:[
-"आधार कार्ड",
-"जन्म दाखला किंवा वयाचा पुरावा",
-"शाळा सोडल्याचा दाखला - लागू असल्यास",
-"पत्त्याचा पुरावा",
-"रेशन कार्ड - लागू असल्यास",
-"महाराष्ट्रातील रहिवासाचा उपलब्ध पुरावा"
-],
-process:[
-"रहिवासाचा पुरावा तपासणे",
-"ऑनलाइन अर्ज",
-"संबंधित पडताळणी",
-"प्रमाणपत्र प्राप्त / प्रिंट"
-],
-note:"अधिकृत सेवेचे नाव व पात्रता प्रकरणानुसार Age-Nationality-Domicile किंवा संबंधित Residence service असू शकते."
-},
-
-{
-id:10,
-icon:"💵",
-title:"उत्पन्न प्रमाणपत्र",
-short:"कुटुंबाच्या उत्पन्नाचा अधिकृत दाखला मिळवण्यासाठी सहाय्य.",
-info:"शेती, नोकरी, व्यवसाय, मजुरी इत्यादी उत्पन्नाच्या स्रोतांवर आधारित उत्पन्न प्रमाणपत्रासाठी ऑनलाइन सहाय्य.",
-docs:[
-"आधार कार्ड",
-"रेशन कार्ड",
-"उत्पन्नाचा स्रोत दर्शवणारे कागदपत्र",
-"7/12 उतारा - शेती असल्यास",
-"पगार प्रमाणपत्र / Form 16 - नोकरी असल्यास",
-"बँक कागदपत्र - लागू असल्यास",
-"आवश्यक असल्यास स्वयंघोषणा / प्रतिज्ञापत्र"
-],
-process:[
-"उत्पन्नाचे स्रोत तपासणे",
-"कागदपत्रे संकलित करणे",
-"ऑनलाइन अर्ज",
-"महसूल पडताळणीनंतर प्रमाणपत्र"
-],
-note:"उत्पन्न प्रमाणपत्राची वैधता व वापर संबंधित योजनेच्या नियमांनुसार तपासावा."
-},
-
-{
-id:11,
-icon:"🎓",
-title:"EWS प्रमाणपत्र",
-short:"आर्थिकदृष्ट्या दुर्बल घटकासाठी EWS प्रक्रियेत सहाय्य.",
-info:"EWS प्रमाणपत्रासाठी पात्रता तपासणी व ऑनलाइन अर्ज प्रक्रियेत सहाय्य.",
-docs:[
-"आधार कार्ड",
-"उत्पन्न प्रमाणपत्र",
-"रेशन कार्ड / कुटुंबाची माहिती",
-"7/12 उतारा - शेती असल्यास",
-"मालमत्ता / जमीन संबंधित पुरावे - लागू असल्यास",
-"रहिवासी पुरावा",
-"आवश्यक घोषणापत्र / प्रतिज्ञापत्र"
-],
-process:[
-"प्रवर्ग व कुटुंबाची पात्रता तपासणे",
-"उत्पन्न व मालमत्ता संबंधित माहिती तपासणे",
-"ऑनलाइन अर्ज",
-"पडताळणीनंतर प्रमाणपत्र"
-],
-note:"EWS साठी केवळ उत्पन्नच नव्हे तर लागू मालमत्ता/जमीन निकषही तपासले जाऊ शकतात. अंतिम पात्रता संबंधित शासन नियमांनुसार ठरते."
-},
-
-{
-id:12,
-icon:"📑",
-title:"Non-Creamy Layer प्रमाणपत्र",
-short:"OBC/VJNT/SBC इत्यादी पात्र प्रवर्गांसाठी NCL सहाय्य.",
-info:"Non-Creamy Layer प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्र प्रक्रियेत सहाय्य.",
-docs:[
-"जात प्रमाणपत्र",
-"उत्पन्न प्रमाणपत्र",
-"आधार कार्ड",
-"पत्त्याचा पुरावा",
-"कुटुंबाची आवश्यक माहिती",
-"पालकांचे उत्पन्न कागदपत्र - लागू असल्यास"
-],
-process:[
-"जात व उत्पन्नाची प्राथमिक तपासणी",
-"कागदपत्रे अपलोड",
-"ऑनलाइन अर्ज",
-"संबंधित कार्यालयाची पडताळणी"
-],
-note:"NCL साठी उत्पन्न मर्यादा व इतर निकष शासनाच्या लागू नियमांनुसार तपासावेत."
-},
-
-{
-id:13,
-icon:"👴",
-title:"ज्येष्ठ नागरिक प्रमाणपत्र",
-short:"ज्येष्ठ नागरिक प्रमाणपत्रासाठी ऑनलाइन अर्ज सुविधा.",
-info:"ज्येष्ठ नागरिक म्हणून वयाचा अधिकृत पुरावा / प्रमाणपत्र मिळवण्यासाठी सहाय्य.",
-docs:[
-"आधार कार्ड",
-"जन्म दाखला किंवा वयाचा पुरावा",
-"शाळा सोडल्याचा दाखला - उपलब्ध असल्यास",
-"पत्त्याचा पुरावा",
-"रेशन कार्ड - लागू असल्यास"
-],
+</body>
+</html>
