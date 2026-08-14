@@ -3,107 +3,2033 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>महारुद्र ऑनलाइन सेंटर | फुलसावंगी</title>
-<meta name="description" content="महारुद्र ऑनलाइन सेंटर फुलसावंगी — शेतकरी व नागरिकांसाठी विविध ऑनलाइन आणि शासकीय सेवा एकाच ठिकाणी.">
+
+<meta name="description"
+content="महारुद्र ऑनलाइन सेंटर फुलसावंगी - शेतकरी, नागरिक व व्यवसायिकांसाठी विविध ऑनलाइन सेवा.">
+
 <style>
-:root{--green:#123d2a;--green2:#1f6545;--gold:#c8a44d;--cream:#f7f3e8;--white:#fff;--text:#243128}
-*{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;color:var(--text);background:#fbfaf6;line-height:1.6}
-nav{position:sticky;top:0;z-index:10;background:rgba(18,61,42,.97);display:flex;align-items:center;justify-content:space-between;padding:14px 6%;box-shadow:0 2px 12px #0002}
-.logo{color:#f4d889;font-size:22px;font-weight:800}.logo span{color:#fff}
-nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:14px}
-.hero{min-height:76vh;display:flex;align-items:center;position:relative;background:linear-gradient(90deg,rgba(8,39,25,.88),rgba(8,39,25,.45)),url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85') center/cover}
-.hero-inner{max-width:1100px;margin:auto;padding:70px 6%;color:#fff;width:100%}
-.badge{display:inline-block;border:1px solid #e8cc78;color:#f5d987;padding:6px 14px;border-radius:30px;font-size:13px;letter-spacing:.5px}
-h1{font-size:clamp(40px,6vw,72px);line-height:1.08;margin:18px 0 12px;max-width:800px}
-.hero p{font-size:19px;max-width:680px;color:#f4f1e8}
-.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block}
-.primary{background:var(--gold);color:#183124}.outline{border:1px solid #fff;color:#fff}
-section{padding:75px 6%}.wrap{max-width:1120px;margin:auto}
-.eyebrow{color:#a17c24;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:13px}
-h2{font-size:36px;color:var(--green);margin:7px 0 12px}
-.section-intro{max-width:720px;color:#66736b}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:30px}
-.card{background:#fff;border:1px solid #e7e0cf;border-radius:14px;padding:25px;box-shadow:0 8px 25px #123d2a0d;transition:.25s}
-.card:hover{transform:translateY(-5px);box-shadow:0 15px 32px #123d2a1a;border-color:#d3b866}
-.icon{font-size:28px}.card h3{color:var(--green);margin:9px 0 5px}.card p{margin:0;color:#68736c;font-size:14px}
-.alt{background:var(--cream)}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.about-img{min-height:400px;border-radius:18px;background:url('https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=1200&q=85') center/cover;box-shadow:0 18px 40px #123d2a22}
-.points{padding:0;list-style:none}.points li{margin:12px 0}.points li:before{content:"✓";color:#a17c24;font-weight:800;margin-right:10px}
-.contact{background:var(--green);color:#fff}.contact h2{color:#f4d987}.contact .card{background:#fff}
-footer{background:#0b281b;color:#dbe4dc;text-align:center;padding:28px 6%;font-size:13px}
-@media(max-width:750px){nav{padding:12px 5%}nav a{display:none}.hero{min-height:72vh}.hero-inner{padding:55px 6%}h1{font-size:43px}.about{grid-template-columns:1fr}.about-img{min-height:280px}section{padding:55px 5%}}
+
+:root{
+    --green:#075b3b;
+    --green2:#0b9b62;
+    --dark:#063d2a;
+    --gold:#e7bd4d;
+    --light:#f4faf7;
+    --white:#ffffff;
+    --text:#17362a;
+    --muted:#6b7c74;
+    --shadow:0 15px 40px rgba(0,0,0,.10);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
+    background:var(--light);
+    color:var(--text);
+}
+
+/* TOP BAR */
+
+.topbar{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:13px;
+}
+
+.topbar strong{
+    color:var(--gold);
+}
+
+/* HEADER */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #e4eee9;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    min-height:75px;
+    padding:10px 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:23px;
+    font-weight:1000;
+    color:var(--dark);
+}
+
+.logo small{
+    display:block;
+    color:var(--green2);
+    font-size:10px;
+    letter-spacing:2px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    font-weight:800;
+    font-size:14px;
+    color:var(--dark);
+}
+
+nav a:hover{
+    color:var(--green2);
+}
+
+.menu{
+    display:none;
+    border:0;
+    background:#edf7f2;
+    padding:10px;
+    border-radius:10px;
+    font-size:22px;
+}
+
+/* HERO */
+
+.hero{
+    background:
+    radial-gradient(circle at 85% 20%,#ffffff25,transparent 25%),
+    linear-gradient(135deg,#063d2a,#087a4e 60%,#11a76a);
+
+    color:white;
+}
+
+.hero-container{
+    max-width:1200px;
+    margin:auto;
+
+    min-height:570px;
+
+    padding:80px 20px;
+
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+
+    gap:40px;
+
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:9px 14px;
+
+    border-radius:30px;
+
+    border:1px solid #ffffff40;
+    background:#ffffff15;
+
+    font-size:13px;
+    font-weight:900;
+}
+
+.hero h1{
+    font-size:clamp(40px,6vw,70px);
+    line-height:1.05;
+
+    margin:20px 0 15px;
+}
+
+.hero h1 span{
+    color:#ffe083;
+}
+
+.hero p{
+    max-width:700px;
+
+    line-height:1.7;
+
+    font-size:18px;
+
+    color:#eafff4;
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin-top:25px;
+}
+
+.btn{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:13px 19px;
+
+    border-radius:12px;
+
+    font-weight:900;
+
+    border:0;
+
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#3b2c00;
+}
+
+.btn-white{
+    background:white;
+    color:var(--dark);
+}
+
+.btn-outline{
+    background:#ffffff15;
+    color:white;
+
+    border:1px solid #ffffff55;
+}
+
+.hero-card{
+    padding:30px;
+
+    border-radius:28px;
+
+    background:#ffffff15;
+    border:1px solid #ffffff30;
+
+    box-shadow:0 25px 70px #0003;
+
+    text-align:center;
+}
+
+.hero-icon{
+    font-size:85px;
+}
+
+.hero-card h3{
+    font-size:25px;
+    margin:10px 0;
+}
+
+.hero-card p{
+    font-size:14px;
+}
+
+/* SECTION */
+
+section{
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+
+    margin-bottom:35px;
+}
+
+.eyebrow{
+    color:var(--green2);
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    font-weight:1000;
+}
+
+.section-title h2{
+    font-size:clamp(30px,5vw,46px);
+
+    color:var(--dark);
+
+    margin:8px 0;
+}
+
+.section-title p{
+    color:var(--muted);
+}
+
+/* SEARCH */
+
+.tools{
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+    flex-wrap:wrap;
+}
+
+.search{
+    flex:1;
+
+    min-width:230px;
+
+    padding:15px;
+
+    border-radius:13px;
+
+    border:1px solid #d9e8e1;
+
+    font-size:15px;
+
+    outline:none;
+
+    background:white;
+}
+
+.filter{
+    padding:0 15px;
+
+    border-radius:13px;
+
+    border:1px solid #d9e8e1;
+
+    background:white;
+
+    font-weight:800;
+}
+
+/* SERVICES */
+
+.services-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+.service-card{
+    background:white;
+
+    border:1px solid #dce9e3;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-7px);
+
+    box-shadow:0 25px 55px rgba(6,61,42,.18);
+}
+
+.service-image{
+    height:155px;
+
+    display:grid;
+
+    place-items:center;
+
+    font-size:65px;
+
+    color:white;
+
+    background:
+    linear-gradient(135deg,#075b3b,#12a76a);
+}
+
+.service-image:nth-child(2){
+    background:linear-gradient(135deg,#14556c,#159b80);
+}
+
+.service-body{
+    padding:18px;
+}
+
+.service-body h3{
+    color:var(--dark);
+
+    font-size:18px;
+
+    line-height:1.45;
+
+    margin-bottom:10px;
+}
+
+.category{
+    color:var(--muted);
+
+    font-size:12px;
+
+    margin-bottom:15px;
+}
+
+.actions{
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+}
+
+.actions button,
+.actions a{
+
+    border:0;
+
+    padding:10px 12px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:900;
+
+    cursor:pointer;
+}
+
+.document-btn{
+    background:var(--green);
+
+    color:white;
+}
+
+.whatsapp-btn{
+    background:#e5f8ed;
+
+    color:#08764d;
+}
+
+.call-btn{
+    background:#fff2d1;
+
+    color:#765a0c;
+}
+
+/* FEATURES */
+
+.features{
+    background:white;
+}
+
+.feature-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:18px;
+}
+
+.feature{
+    padding:23px;
+
+    border-radius:20px;
+
+    border:1px solid #dfebe5;
+
+    background:#fbfefc;
+}
+
+.feature-icon{
+    font-size:35px;
+}
+
+.feature h3{
+    margin:9px 0;
+
+    color:var(--dark);
+}
+
+.feature p{
+    color:var(--muted);
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+/* CONTACT */
+
+.contact{
+    background:
+    linear-gradient(135deg,#063d2a,#0a8053);
+
+    color:white;
+}
+
+.contact .section-title h2{
+    color:white;
+}
+
+.contact-grid{
+    display:grid;
+
+    grid-template-columns:
+    1fr 1fr;
+
+    gap:25px;
+}
+
+.contact-card{
+    padding:28px;
+
+    border-radius:22px;
+
+    background:#ffffff12;
+
+    border:1px solid #ffffff25;
+}
+
+.contact-card h3{
+    margin-bottom:15px;
+}
+
+.contact-card p{
+    line-height:1.8;
+
+    color:#e9fff5;
+}
+
+/* FOOTER */
+
+footer{
+    background:#032a1d;
+
+    color:#d7eee5;
+
+    text-align:center;
+
+    padding:25px;
+
+    font-size:13px;
+}
+
+/* DOCUMENT MODAL */
+
+.modal{
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:5000;
+
+    background:#0009;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-box{
+    width:min(650px,100%);
+
+    max-height:88vh;
+
+    overflow:auto;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:28px;
+
+    position:relative;
+}
+
+.close{
+    position:absolute;
+
+    right:13px;
+    top:12px;
+
+    width:40px;
+    height:40px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:#edf5f1;
+
+    font-size:24px;
+
+    cursor:pointer;
+}
+
+.modal-box h2{
+    color:var(--dark);
+
+    padding-right:40px;
+
+    margin-bottom:20px;
+}
+
+.documents-list{
+    padding-left:20px;
+}
+
+.documents-list li{
+    margin:9px 0;
+
+    padding:10px;
+
+    background:#f3faf6;
+
+    border-left:4px solid var(--gold);
+
+    border-radius:8px;
+}
+
+/* SMART ASSISTANT */
+
+.chat-button{
+    position:fixed;
+
+    right:18px;
+    bottom:18px;
+
+    z-index:4500;
+
+    border:0;
+
+    border-radius:50px;
+
+    padding:15px 19px;
+
+    background:var(--green2);
+
+    color:white;
+
+    font-weight:1000;
+
+    box-shadow:0 15px 35px #0005;
+
+    cursor:pointer;
+}
+
+.chat-window{
+    display:none;
+
+    position:fixed;
+
+    right:18px;
+    bottom:80px;
+
+    z-index:4501;
+
+    width:min(380px,calc(100vw - 28px));
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 70px #0006;
+}
+
+.chat-window.active{
+    display:block;
+}
+
+.chat-header{
+    background:var(--green);
+
+    color:white;
+
+    padding:14px 16px;
+
+    font-weight:900;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.chat-header button{
+    border:0;
+
+    background:#ffffff22;
+
+    color:white;
+
+    border-radius:50%;
+
+    width:32px;
+    height:32px;
+}
+
+.chat-body{
+    height:310px;
+
+    overflow:auto;
+
+    padding:13px;
+
+    background:#f5faf7;
+}
+
+.message{
+    max-width:88%;
+
+    padding:10px 12px;
+
+    border-radius:13px;
+
+    margin:7px 0;
+
+    font-size:13px;
+
+    line-height:1.55;
+}
+
+.bot{
+    background:white;
+
+    border:1px solid #dfeae5;
+}
+
+.user{
+    background:#dff6e8;
+
+    margin-left:auto;
+}
+
+.chat-form{
+    display:flex;
+
+    border-top:1px solid #e2ebe7;
+}
+
+.chat-form input{
+    flex:1;
+
+    border:0;
+
+    padding:14px;
+
+    outline:none;
+}
+
+.chat-form button{
+    border:0;
+
+    background:var(--green);
+
+    color:white;
+
+    padding:0 18px;
+
+    font-weight:900;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero-container{
+        grid-template-columns:1fr;
+    }
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    nav{
+        display:none;
+    }
+
+    .menu{
+        display:block;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero-container{
+        padding:55px 20px;
+    }
+
+    .hero-card{
+        display:none;
+    }
+
+    .services-grid,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+}
+
 </style>
 </head>
+
 <body>
+
+<!-- TOP INFORMATION -->
+
+<div class="topbar">
+
+📍 <strong>महारुद्र ऑनलाइन सेंटर, फुलसावंगी</strong>
+
+•
+
+ता. महागाव • जि. यवतमाळ • महाराष्ट्र – 445230
+
+•
+
+📞 7020764054
+
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="navbar">
+
+<a href="#home" class="logo">
+
+महारुद्र ऑनलाइन सेंटर
+
+<small>FULSAWANGI DIGITAL SERVICE CENTER</small>
+
+</a>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+
 <nav>
-  <div class="logo">🌿 महारुद्र <span>ऑनलाइन सेंटर</span></div>
-  <div><a href="#services">सेवा</a><a href="#about">आमच्याबद्दल</a><a href="#contact">संपर्क</a></div>
+
+<a href="#home">Home</a>
+
+<a href="#services">आमच्या सेवा</a>
+
+<a href="#about">आमच्याबद्दल</a>
+
+<a href="#contact">संपर्क</a>
+
 </nav>
 
-<header class="hero">
-  <div class="hero-inner">
-    <span class="badge">विश्वास • सेवा • डिजिटल सुविधा</span>
-    <h1>शेतकरी आणि नागरिकांसाठी<br>सर्व ऑनलाइन सेवा एकाच ठिकाणी.</h1>
-    <p>महारुद्र ऑनलाइन सेंटर, फुलसावंगी — विविध शासकीय योजना, प्रमाणपत्रे, जमीनविषयक कामे, शेतकरी सेवा आणि डिजिटल सुविधा विश्वासाने उपलब्ध.</p>
-    <div class="btns">
-      <a class="btn primary" href="tel:7020764054">📞 कॉल करा</a>
-      <a class="btn outline" href="https://wa.me/917020764054" target="_blank">💬 WhatsApp</a>
-      <a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Maharudra+Online+Center+Fulsawangi" target="_blank">📍 Google Maps</a>
-    </div>
-  </div>
+</div>
+
 </header>
 
-<section id="services">
-<div class="wrap">
-<span class="eyebrow">Our Services</span><h2>आमच्या प्रमुख सेवा</h2>
-<p class="section-intro">आपल्या दैनंदिन आणि शासकीय ऑनलाइन कामांसाठी आवश्यक प्रमुख सेवा एकाच ठिकाणी.</p>
-<div class="grid">
-<div class="card"><div class="icon">🌾</div><h3>शेतकरी सेवा</h3><p>PM-KISAN, पीक विमा, ई-पीक पाहणी आणि विविध शेतकरी योजनांची ऑनलाइन मदत.</p></div>
-<div class="card"><div class="icon">📜</div><h3>प्रमाणपत्र सेवा</h3><p>जात, उत्पन्न, रहिवासी, EWS, नॉन-क्रीमी लेयर व इतर प्रमाणपत्रांसाठी सहाय्य.</p></div>
-<div class="card"><div class="icon">🏡</div><h3>जमीन विषयक सेवा</h3><p>डिजिटल 7/12, 8-A, ई-फेरफार, नकाशे आणि संबंधित ऑनलाइन सुविधा.</p></div>
-<div class="card"><div class="icon">❤️</div><h3>आरोग्य सेवा</h3><p>आयुष्मान भारत PM-JAY कार्ड तपासणी व प्रिंटिंगसाठी सहाय्य.</p></div>
-<div class="card"><div class="icon">🏢</div><h3>MSME / Udyam</h3><p>उद्यम नोंदणी व लघुउद्योगाशी संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.</p></div>
-<div class="card"><div class="icon">🔐</div><h3>KYC व ऑनलाइन फॉर्म</h3><p>विविध शासकीय योजना, KYC आणि ऑनलाइन अर्ज भरण्यासाठी सुविधा.</p></div>
-<div class="card"><div class="icon">🔥</div><h3>PM Ujjwala 2.0</h3><p>योजनेसाठी ऑनलाइन अर्ज व आवश्यक प्रक्रियेत मार्गदर्शन.</p></div>
-<div class="card"><div class="icon">🪪</div><h3>विविध डिजिटल सेवा</h3><p>महा ID, कार्ड सेवा आणि नागरिकांसाठी इतर डिजिटल सुविधा.</p></div>
-</div>
-</div>
-</section>
 
-<section id="about" class="alt">
-<div class="wrap about">
-<div class="about-img"></div>
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
 <div>
-<span class="eyebrow">About Us</span><h2>सेवा हीच आमची ओळख</h2>
-<p>महारुद्र ऑनलाइन सेंटर फुलसावंगी येथे शेतकरी बांधव आणि नागरिकांना विविध ऑनलाइन व शासकीय सेवांसाठी सोपी, विश्वासार्ह आणि व्यवस्थित मदत देण्याचा आमचा प्रयत्न आहे.</p>
-<ul class="points">
-<li>एकाच ठिकाणी विविध ऑनलाइन सेवा</li>
-<li>शेतकरी व नागरिकांसाठी मार्गदर्शन</li>
-<li>प्रोफेशनल आणि पारदर्शक सेवा</li>
-<li>डिजिटल प्रक्रियेत आवश्यक सहाय्य</li>
-</ul>
+
+<span class="badge">
+
+🌾 शेतकरी व नागरिकांसाठी ऑनलाइन सेवा
+
+</span>
+
+<h1>
+
+महारुद्र
+
+<span>ऑनलाइन सेंटर</span>
+
+</h1>
+
+<p>
+
+शासकीय योजना, प्रमाणपत्रे, जमीनविषयक सेवा,
+
+KYC, ऑनलाइन फॉर्म आणि डिजिटल सेवा
+
+<strong>एकाच ठिकाणी.</strong>
+
+</p>
+
+<div class="buttons">
+
+<a href="#services" class="btn btn-primary">
+
+📋 सर्व सेवा पाहा
+
+</a>
+
+<a href="tel:7020764054" class="btn btn-white">
+
+📞 Call Now
+
+</a>
+
+<a href="https://wa.me/917020764054"
+
+target="_blank"
+
+class="btn btn-outline">
+
+💬 WhatsApp
+
+</a>
+
 </div>
+
 </div>
+
+
+<div class="hero-card">
+
+<div class="hero-icon">🤝</div>
+
+<h3>
+
+तुमच्या सेवेसाठी आम्ही सदैव तत्पर
+
+</h3>
+
+<p>
+
+प्रत्येक सेवेवर Documents बटन क्लिक करून
+
+आवश्यक कागदपत्रांची यादी लगेच पाहा.
+
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="contact" class="contact">
-<div class="wrap">
-<span class="eyebrow" style="color:#f0d77f">Contact</span><h2>आजच संपर्क करा</h2>
-<div class="grid">
-<div class="card"><h3>👤 मालक</h3><p>श्री. ओमप्रकाश वसंतराव कृष्णापुरे</p></div>
-<div class="card"><h3>📍 पत्ता</h3><p>देवी मंदिरच्या पाठीमागे, आठवडी बाजार रोड, आंबेडकर चौक, फुलसावंगी</p></div>
-<div class="card"><h3>📞 मोबाईल</h3><p>7020764054</p></div>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+
+MAHARUDRA ONLINE CENTER
+
 </div>
-<div class="btns"><a class="btn primary" href="tel:7020764054">📞 आत्ताच कॉल करा</a><a class="btn outline" href="https://wa.me/917020764054" target="_blank">💬 WhatsApp वर संपर्क</a></div>
+
+<h2>
+
+आमच्या प्रमुख ऑनलाइन सेवा
+
+</h2>
+
+<p>
+
+सेवा शोधा • Documents पाहा • WhatsApp वर चौकशी करा
+
+</p>
+
 </div>
+
+
+<div class="tools">
+
+<input
+
+type="text"
+
+id="search"
+
+class="search"
+
+placeholder="🔎 सेवा शोधा... उदा. PM-KISAN, जात, ७/१२"
+
+oninput="renderServices()"
+
+>
+
+
+<select
+
+id="filter"
+
+class="filter"
+
+onchange="renderServices()"
+
+>
+
+<option value="all">सर्व सेवा</option>
+
+<option>शेतकरी सेवा</option>
+
+<option>प्रमाणपत्रे</option>
+
+<option>जमीन सेवा</option>
+
+<option>शासकीय योजना</option>
+
+<option>व्यवसाय सेवा</option>
+
+<option>डिजिटल सेवा</option>
+
+</select>
+
+</div>
+
+
+<div
+
+class="services-grid"
+
+id="servicesGrid">
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- FEATURES -->
+
+<section id="about" class="features">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow">
+
+WHY MAHARUDRA?
+
+</div>
+
+<h2>
+
+आमच्या सेवेची वैशिष्ट्ये
+
+</h2>
+
+</div>
+
+
+<div class="feature-grid">
+
+
+<div class="feature">
+
+<div class="feature-icon">📄</div>
+
+<h3>Documents माहिती</h3>
+
+<p>
+
+प्रत्येक सेवेसाठी आवश्यक कागदपत्रे
+
+एका क्लिकवर पाहता येतील.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">🤖</div>
+
+<h3>Smart Assistant</h3>
+
+<p>
+
+ग्राहकांच्या सामान्य प्रश्नांना
+
+वेबसाइटवरच प्राथमिक उत्तर.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">💬</div>
+
+<h3>WhatsApp चौकशी</h3>
+
+<p>
+
+प्रत्येक सेवेसाठी तयार enquiry message.
+
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="feature-icon">📱</div>
+
+<h3>Mobile Friendly</h3>
+
+<p>
+
+मोबाईल, टॅबलेट आणि कॉम्प्युटरवर
+
+सुंदर अनुभव.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="eyebrow" style="color:#ffe083">
+
+CONTACT US
+
+</div>
+
+<h2>
+
+महारुद्र ऑनलाइन सेंटर
+
+</h2>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>📍 कार्यालयाचा पत्ता</h3>
+
+<p>
+
+देवी मंदिरच्या पाठीमागे,<br>
+
+आठवडी बाजार रोड,<br>
+
+आंबेडकर चौक, फुलसावंगी,<br>
+
+ता. महागाव,<br>
+
+जि. यवतमाळ,<br>
+
+महाराष्ट्र – 445230
+
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>📞 आमच्याशी संपर्क करा</h3>
+
+<p>
+
+मोबाईल:
+
+<strong>7020764054</strong>
+
+</p>
+
+<div class="buttons">
+
+<a
+
+href="tel:7020764054"
+
+class="btn btn-white">
+
+📞 Call Now
+
+</a>
+
+<a
+
+href="https://wa.me/917020764054"
+
+target="_blank"
+
+class="btn btn-primary">
+
+💬 WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
-शेतकरी बांधवांच्या सदैव सेवार्थ — <strong>महारुद्र ऑनलाइन सेंटर, फुलसावंगी</strong><br>
+
+© 2026 महारुद्र ऑनलाइन सेंटर, फुलसावंगी
+
+<br><br>
+
+शेतकरी बांधवांच्या सदैव सेवार्थ
+
+<br>
+
 // अन्नदाता सुखी भव //
+
 </footer>
-</body>
-</html>
+
+
+<!-- DOCUMENT MODAL -->
+
+<div
+
+class="modal"
+
+id="documentModal"
+
+onclick="if(event.target===this)closeDocuments()">
+
+<div class="modal-box">
+
+<button
+
+class="close"
+
+onclick="closeDocuments()">
+
+×
+
+</button>
+
+
+<h2 id="modalTitle"></h2>
+
+<h3>
+
+📄 आवश्यक कागदपत्रे
+
+</h3>
+
+<br>
+
+<ul
+
+class="documents-list"
+
+id="documentsList">
+
+</ul>
+
+
+<p
+
+style="font-size:12px;color:#718078;margin-top:20px">
+
+टीप: अंतिम कागदपत्रे संबंधित शासकीय पोर्टल
+
+किंवा योजनेच्या नियमांनुसार बदलू शकतात.
+
+अर्ज करण्यापूर्वी कार्यालयाकडून पुष्टी करा.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- SMART ASSISTANT -->
+
+<button
+
+class="chat-button"
+
+onclick="toggleChat()">
+
+🤖 Smart Assistant
+
+</button>
+
+
+<div
+
+class="chat-window"
+
+id="chatWindow">
+
+
+<div class="chat-header">
+
+<span>
+
+🤖 महारुद्र Smart Assistant
+
+</span>
+
+<button onclick="toggleChat()">
+
+×
+
+</button>
+
+</div>
+
+
+<div
+
+class="chat-body"
+
+id="chatBody">
+
+
+<div class="message bot">
+
+नमस्कार 🙏
+
+मी महारुद्र ऑनलाइन सेंटरचा Smart Assistant आहे.
+
+<br><br>
+
+तुम्ही सेवेचे नाव किंवा
+
+<b>Documents</b>,
+
+<b>पत्ता</b>,
+
+<b>संपर्क</b>
+
+असे लिहू शकता.
+
+</div>
+
+
+</div>
+
+
+<form
+
+class="chat-form"
+
+onsubmit="sendMessage(event)">
+
+<input
+
+id="chatInput"
+
+placeholder="तुमचा प्रश्न लिहा..."
+
+autocomplete="off">
+
+<button>
+
+पाठवा
+
+</button>
+
+</form>
+
+
+</div>
+
+
+<script>
+
+
+/* =========================================
+   SERVICE DATABASE
+========================================= */
+
+
+const services = [
+
+{
+
+icon:"🌾",
+
+name:"PM-KISAN – वारसाच्या नावाने लाभ",
+
+category:"शेतकरी सेवा",
+
+documents:[
+
+"वारस व्यक्तीचे आधार कार्ड",
+
+"७/१२ उतारा",
+
+"फेरफार उतारा",
+
+"पती व पत्नीचे आधार कार्ड",
+
+"रेशन कार्ड झेरॉक्स",
+
+"मयत व्यक्तीचे आधार कार्ड",
+
+"२०१९ पूर्वीचा जुना फेरफार उतारा",
+
+"मृत्यू प्रमाणपत्र"
+
+]
+
+},
+
+
+{
+
+icon:"🛡️",
+
+name:"प्रधानमंत्री फसल विमा योजना",
+
+category:"शेतकरी सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"७/१२ उतारा",
+
+"बँक पासबुक",
+
+"पीकाची माहिती",
+
+"ई-पिक पाहणीची माहिती"
+
+]
+
+},
+
+
+{
+
+icon:"📱",
+
+name:"ई-पिक पाहणी",
+
+category:"शेतकरी सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"७/१२ / जमीन माहिती",
+
+"पीकाची माहिती",
+
+"मोबाईल नंबर"
+
+]
+
+},
+
+
+{
+
+icon:"💰",
+
+name:"पुण्यश्लोक अहिल्यादेवी होळकर शेतकरी कर्जमुक्ती योजना",
+
+category:"शासकीय योजना",
+
+documents:[
+
+"आधार कार्ड",
+
+"बँक पासबुक",
+
+"कर्ज खाते माहिती",
+
+"KYC कागदपत्रे"
+
+]
+
+},
+
+
+{
+
+icon:"🚜",
+
+name:"कृषी यंत्रसामग्री / हळद मशीन अर्ज",
+
+category:"शेतकरी सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"७/१२ उतारा",
+
+"बँक पासबुक",
+
+"मोबाईल नंबर",
+
+"योजनेनुसार इतर कागदपत्रे"
+
+]
+
+},
+
+
+{
+
+icon:"📋",
+
+name:"शेतकरी विविध ऑनलाइन अर्ज",
+
+category:"शेतकरी सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"७/१२ उतारा",
+
+"बँक पासबुक",
+
+"मोबाईल नंबर",
+
+"योजनेनुसार आवश्यक कागदपत्रे"
+
+]
+
+},
+
+
+{
+
+icon:"📃",
+
+name:"डिजिटल ७/१२ उतारा",
+
+category:"जमीन सेवा",
+
+documents:[
+
+"गट / सर्व्हे नंबर",
+
+"गावाचे नाव",
+
+"मालकाचे नाव"
+
+]
+
+},
+
+
+{
+
+icon:"📑",
+
+name:"८-A उतारा",
+
+category:"जमीन सेवा",
+
+documents:[
+
+"गट / सर्व्हे नंबर",
+
+"गावाचे नाव",
+
+"मालकाचे नाव"
+
+]
+
+},
+
+
+{
+
+icon:"🗺️",
+
+name:"ई-फेरफार / जमीन मॅपिंग",
+
+category:"जमीन सेवा",
+
+documents:[
+
+"७/१२ उतारा",
+
+"फेरफार उतारा",
+
+"गट / सर्व्हे नंबर",
+
+"संबंधित जमीन कागदपत्रे"
+
+]
+
+},
+
+
+{
+
+icon:"🪪",
+
+name:"जात प्रमाणपत्र",
+
+category:"प्रमाणपत्रे",
+
+documents:[
+
+"आधार कार्ड",
+
+"रेशन कार्ड",
+
+"जन्म / शाळा सोडल्याचा दाखला",
+
+"लागू असल्यास पूर्वजांचे जात पुरावे"
+
+]
+
+},
+
+
+{
+
+icon:"🏠",
+
+name:"रहिवासी / अधिवास प्रमाणपत्र",
+
+category:"प्रमाणपत्रे",
+
+documents:[
+
+"आधार कार्ड",
+
+"रेशन कार्ड",
+
+"पत्त्याचा पुरावा"
+
+]
+
+},
+
+
+{
+
+icon:"💵",
+
+name:"उत्पन्न प्रमाणपत्र",
+
+category:"प्रमाणपत्रे",
+
+documents:[
+
+"आधार कार्ड",
+
+"रेशन कार्ड",
+
+"उत्पन्नाचा पुरावा / स्वघोषणा",
+
+"लागू असल्यास इतर पुरावे"
+
+]
+
+},
+
+
+{
+
+icon:"🎓",
+
+name:"EWS १०% प्रमाणपत्र",
+
+category:"प्रमाणपत्रे",
+
+documents:[
+
+"आधार कार्ड",
+
+"उत्पन्न प्रमाणपत्र",
+
+"मालमत्ता / जमीन संबंधित कागदपत्रे",
+
+"रेशन कार्ड",
+
+"पत्त्याचा पुरावा"
+
+]
+
+},
+
+
+{
+
+icon:"📑",
+
+name:"Non-Creamy Layer प्रमाणपत्र / नूतनीकरण",
+
+category:"प्रमाणपत्रे",
+
+documents:[
+
+"आधार कार्ड",
+
+"जात प्रमाणपत्र",
+
+"उत्पन्न प्रमाणपत्र",
+
+"पत्त्याचा पुरावा"
+
+]
+
+},
+
+
+{
+
+icon:"👴",
+
+name:"ज्येष्ठ नागरिक प्रमाणपत्र",
+
+category:"प्रमाणपत्रे",
+
+documents:[
+
+"आधार कार्ड",
+
+"जन्मतारीख पुरावा",
+
+"पत्त्याचा पुरावा"
+
+]
+
+},
+
+
+{
+
+icon:"🌱",
+
+name:"भूमिहीन कृषी शेतमजूर प्रमाणपत्र",
+
+category:"प्रमाणपत्रे",
+
+documents:[
+
+"आधार कार्ड",
+
+"रेशन कार्ड",
+
+"पत्त्याचा पुरावा",
+
+"लागू असल्यास जमीन नसल्याचा पुरावा"
+
+]
+
+},
+
+
+{
+
+icon:"❤️",
+
+name:"आयुष्मान भारत PM-JAY कार्ड",
+
+category:"शासकीय योजना",
+
+documents:[
+
+"आधार कार्ड",
+
+"मोबाईल नंबर",
+
+"रेशन कार्ड / कुटुंबाची माहिती",
+
+"पात्रता तपासणीसाठी आवश्यक माहिती"
+
+]
+
+},
+
+
+{
+
+icon:"🔥",
+
+name:"PM Ujjwala 2.0",
+
+category:"शासकीय योजना",
+
+documents:[
+
+"आधार कार्ड",
+
+"रेशन कार्ड",
+
+"बँक पासबुक",
+
+"मोबाईल नंबर",
+
+"योजनेनुसार इतर कागदपत्रे"
+
+]
+
+},
+
+
+{
+
+icon:"🪪",
+
+name:"Maha ID / Maha Sarathi Card",
+
+category:"शासकीय योजना",
+
+documents:[
+
+"आधार कार्ड",
+
+"मोबाईल नंबर",
+
+"पत्त्याचा पुरावा"
+
+]
+
+},
+
+
+{
+
+icon:"🏢",
+
+name:"Udyam / MSME Registration",
+
+category:"व्यवसाय सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"PAN कार्ड",
+
+"मोबाईल नंबर",
+
+"ई-मेल",
+
+"बँक खाते माहिती",
+
+"व्यवसायाचा पत्ता"
+
+]
+
+},
+
+
+{
+
+icon:"🧾",
+
+name:"Shop Act / व्यवसाय ऑनलाइन सहाय्य",
+
+category:"व्यवसाय सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"PAN कार्ड",
+
+"व्यवसायाचा पत्ता",
+
+"मोबाईल नंबर",
+
+"व्यवसायाची मूलभूत माहिती"
+
+]
+
+},
+
+
+{
+
+icon:"🔐",
+
+name:"KYC सेवा",
+
+category:"डिजिटल सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"PAN कार्ड",
+
+"मोबाईल नंबर",
+
+"संबंधित सेवेची कागदपत्रे"
+
+]
+
+},
+
+
+{
+
+icon:"💻",
+
+name:"विविध Online Forms",
+
+category:"डिजिटल सेवा",
+
+documents:[
+
+"आधार कार्ड",
+
+"मोबाईल नंबर",
+
+"संबंधित योजनेची कागदपत्रे",
+
+"फोटो / स्वाक्षरी"
+
+]
+
+},
+
+
+{
+
+icon:"🖨️",
+
+name:"Print / Scan / Digital Services",
+
+category:"डिजिटल सेवा",
+
+documents:[
+
+"आवश्यक कागदपत्रांची फाईल",
+
+"मोबाईल किंवा ई-मेल"
+
+]
+
+}
+
+];
+
+
+/* =========================================
+   SERVICE RENDER
+========================================= */
+
+
+function renderServices(){
+
+const search =
+
+document.getElementById("search")
+
+.value
+
+.toLowerCase()
+
+.trim();
+
+
+const filter =
+
+document.getElementById("filter")
+
+.value;
+
+
+const grid =
+
+document.getElementById("servicesGrid");
+
+
+const filtered = services.filter(service=>{
+
+const searchMatch =
+
+!search ||
+
+service.name
+
+.toLowerCase()
+
+.includes(search) ||
+
+service.category
+
+.toLowerCase()
+
+.includes(search);
+
+
+const categoryMatch =
