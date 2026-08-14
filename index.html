@@ -7,7 +7,7 @@
 <title>महारुद्र ऑनलाइन सेंटर | फुलसावंगी</title>
 
 <meta name="description"
-content="महारुद्र ऑनलाइन सेंटर फुलसावंगी - शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा एकाच ठिकाणी.">
+content="महारुद्र ऑनलाइन सेंटर फुलसावंगी – शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा एकाच ठिकाणी.">
 
 <style>
 
@@ -25,22 +25,24 @@ body{
     line-height:1.7;
 }
 
+/* NAVBAR */
+
 .navbar{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(9,66,45,.97);
+    background:rgba(9,66,45,0.96);
     backdrop-filter:blur(10px);
     padding:14px 6%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 3px 15px rgba(0,0,0,.18);
+    box-shadow:0 3px 15px rgba(0,0,0,0.18);
 }
 
 .logo{
     color:white;
-    font-size:23px;
+    font-size:24px;
     font-weight:800;
     text-decoration:none;
 }
@@ -72,7 +74,12 @@ body{
     display:flex;
     align-items:center;
     background:
-    linear-gradient(90deg,rgba(4,39,25,.94),rgba(4,39,25,.62),rgba(4,39,25,.25)),
+    linear-gradient(
+        90deg,
+        rgba(4,39,25,0.92),
+        rgba(4,39,25,0.55),
+        rgba(4,39,25,0.20)
+    ),
     url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=85")
     center/cover;
     color:white;
@@ -80,7 +87,7 @@ body{
 }
 
 .hero-content{
-    max-width:800px;
+    max-width:780px;
 }
 
 .badge{
@@ -94,7 +101,7 @@ body{
 }
 
 .hero h1{
-    font-size:clamp(40px,6vw,70px);
+    font-size:clamp(42px,6vw,72px);
     line-height:1.15;
     margin-bottom:20px;
 }
@@ -121,7 +128,7 @@ body{
     padding:13px 24px;
     border-radius:8px;
     font-weight:700;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .btn:hover{
@@ -143,7 +150,7 @@ body{
     color:#155b3c;
 }
 
-/* COMMON */
+/* SECTION */
 
 section{
     padding:75px 6%;
@@ -151,7 +158,7 @@ section{
 
 .section-title{
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:45px;
 }
 
 .section-title small{
@@ -170,28 +177,6 @@ section{
     color:#66736a;
 }
 
-/* SEARCH */
-
-.service-search{
-    max-width:700px;
-    margin:0 auto 35px;
-}
-
-.service-search input{
-    width:100%;
-    padding:16px 20px;
-    border:2px solid #dce5dc;
-    border-radius:12px;
-    font-size:16px;
-    outline:none;
-    background:white;
-}
-
-.service-search input:focus{
-    border-color:#0b6b45;
-    box-shadow:0 0 0 4px rgba(11,107,69,.08);
-}
-
 /* SERVICES */
 
 .services{
@@ -202,19 +187,20 @@ section{
     max-width:1250px;
     margin:auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
     gap:22px;
 }
 
 .service-card{
     background:white;
     border-radius:16px;
-    padding:24px;
-    border:1px solid #e2e9e2;
-    box-shadow:0 7px 25px rgba(20,60,35,.08);
-    transition:.3s;
+    padding:25px;
+    border:1px solid #e3e9e3;
+    box-shadow:0 7px 25px rgba(20,60,35,0.08);
+    transition:0.3s;
     position:relative;
     overflow:hidden;
+    min-height:190px;
 }
 
 .service-card::before{
@@ -222,103 +208,48 @@ section{
     position:absolute;
     left:0;
     top:0;
-    width:100%;
     height:5px;
+    width:100%;
     background:linear-gradient(90deg,#0b6b45,#f4c542);
 }
 
 .service-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 14px 30px rgba(20,60,35,.15);
+    transform:translateY(-7px);
+    box-shadow:0 14px 30px rgba(20,60,35,0.15);
 }
 
 .icon{
     font-size:35px;
-    margin-bottom:5px;
-}
-
-.service-number{
-    color:#a8790b;
-    font-size:13px;
-    font-weight:bold;
+    margin-bottom:8px;
 }
 
 .service-card h3{
     color:#0b5639;
     font-size:21px;
-    margin:3px 0 8px;
+    font-weight:800;
+    margin-bottom:12px;
 }
 
-.service-card .description{
-    color:#69746c;
+.service-info{
+    color:#68736c;
     font-size:14px;
     margin-bottom:15px;
 }
 
-/* DOCUMENT BOX */
-
-.documents{
-    background:#f5f8f4;
-    border-radius:12px;
-    padding:15px;
-    margin-top:12px;
-    border:1px solid #e0e8df;
-}
-
-.documents-title{
-    color:#0b5639;
-    font-weight:800;
-    margin-bottom:8px;
-    font-size:15px;
-}
-
-.documents ul{
-    padding-left:20px;
-    margin:0;
-}
-
-.documents li{
-    font-size:13px;
-    color:#4e5d52;
-    margin:4px 0;
-}
-
-.note{
-    margin-top:9px;
-    font-size:12px;
-    color:#8a6710;
-    background:#fff9df;
-    border-left:3px solid #f4c542;
-    padding:7px 9px;
-    border-radius:5px;
-}
-
-.service-actions{
-    display:flex;
-    gap:8px;
-    flex-wrap:wrap;
-    margin-top:16px;
-}
-
-.small-btn{
+.service-whatsapp{
     display:inline-block;
-    padding:8px 12px;
-    border-radius:7px;
-    text-decoration:none;
-    font-size:13px;
-    font-weight:bold;
-}
-
-.info-btn{
-    background:#0b5639;
-    color:white;
-    cursor:pointer;
-    border:0;
-}
-
-.wa-btn{
     background:#25D366;
     color:white;
+    text-decoration:none;
+    padding:8px 14px;
+    border-radius:7px;
+    font-size:13px;
+    font-weight:700;
+    transition:0.3s;
+}
+
+.service-whatsapp:hover{
+    transform:scale(1.03);
 }
 
 /* ABOUT */
@@ -340,10 +271,13 @@ section{
     min-height:400px;
     border-radius:20px;
     background:
-    linear-gradient(rgba(0,50,30,.15),rgba(0,50,30,.15)),
+    linear-gradient(
+        rgba(0,50,30,0.15),
+        rgba(0,50,30,0.15)
+    ),
     url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=85")
     center/cover;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
 }
 
 .about-content h2{
@@ -378,7 +312,11 @@ section{
 
 .highlight{
     background:
-    linear-gradient(90deg,rgba(5,63,39,.95),rgba(5,63,39,.82)),
+    linear-gradient(
+        90deg,
+        rgba(5,63,39,0.95),
+        rgba(5,63,39,0.82)
+    ),
     url("https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=1800&q=85")
     center/cover;
     color:white;
@@ -414,7 +352,7 @@ section{
     background:white;
     padding:30px;
     border-radius:16px;
-    box-shadow:0 7px 25px rgba(0,0,0,.07);
+    box-shadow:0 7px 25px rgba(0,0,0,0.07);
 }
 
 .contact-card h3{
@@ -429,6 +367,12 @@ section{
 
 .contact-item strong{
     color:#153b28;
+}
+
+.contact-item a{
+    color:#0b6b45;
+    font-weight:700;
+    text-decoration:none;
 }
 
 /* FOOTER */
@@ -449,8 +393,18 @@ footer p{
     color:#d7e4db;
 }
 
+.footer-email{
+    margin-top:10px;
+}
+
+.footer-email a{
+    color:#f4c542;
+    text-decoration:none;
+    font-weight:bold;
+}
+
 .footer-bottom{
-    border-top:1px solid rgba(255,255,255,.15);
+    border-top:1px solid rgba(255,255,255,0.15);
     margin-top:25px;
     padding-top:18px;
     font-size:13px;
@@ -465,7 +419,7 @@ footer p{
     }
 
     .logo{
-        font-size:18px;
+        font-size:19px;
     }
 
     .nav-links{
@@ -493,10 +447,6 @@ footer p{
         font-size:30px;
     }
 
-    .service-grid{
-        grid-template-columns:1fr;
-    }
-
     .about-box,
     .contact-box{
         grid-template-columns:1fr;
@@ -509,6 +459,7 @@ footer p{
     .highlight h2{
         font-size:30px;
     }
+
 }
 
 </style>
@@ -526,7 +477,7 @@ footer p{
 
 <ul class="nav-links">
 <li><a href="#home">मुख्यपृष्ठ</a></li>
-<li><a href="#services">सर्व सेवा</a></li>
+<li><a href="#services">सेवा</a></li>
 <li><a href="#about">आमच्याबद्दल</a></li>
 <li><a href="#contact">संपर्क</a></li>
 </ul>
@@ -587,1091 +538,523 @@ target="_blank">
 
 <div class="section-title">
 
-<small>MAHARUDRA ONLINE CENTER</small>
+<small>OUR SERVICES</small>
 
-<h2>आमच्या सर्व ऑनलाइन सेवा</h2>
+<h2>आमच्या प्रमुख सेवा</h2>
 
 <p>
-प्रत्येक सेवेसाठी आवश्यक कागदपत्रांची माहिती खाली दिली आहे.
-सेवेच्या नावावरून शोधण्यासाठी Search वापरा.
+शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा एकाच ठिकाणी.
 </p>
 
 </div>
 
 
-<div class="service-search">
-
-<input
-type="text"
-id="serviceSearch"
-placeholder="🔎 सेवा शोधा... उदा. उत्पन्न, जात, EWS, PM-KISAN..."
-onkeyup="searchServices()">
-
-</div>
+<div class="service-grid">
 
 
-<div class="service-grid" id="serviceGrid">
-
-
-<!-- 01 -->
+<!-- 1 -->
 
 <div class="service-card">
-
 <div class="icon">🌾</div>
-
-<div class="service-number">सेवा क्र. 01</div>
-
 <h3>PM-KISAN योजना</h3>
-
-<p class="description">
-PM-KISAN नोंदणी, KYC, दुरुस्ती आणि वारसाच्या नावाने लाभ हस्तांतरणासाठी सहाय्य.
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>अर्जदाराचा आधार कार्ड</li>
-<li>7/12 उतारा</li>
-<li>8-A उतारा</li>
-<li>बँक पासबुक</li>
-<li>मोबाईल नंबर</li>
-<li>वारस प्रकरण असल्यास फेरफार उतारा</li>
-<li>मयत व्यक्तीचे मृत्यू प्रमाणपत्र</li>
-</ul>
-
-</div>
-
-<div class="service-actions">
-
-<a class="small-btn wa-btn"
-href="https://wa.me/917020764054?text=PM-KISAN%20योजनेसाठी%20माहिती%20हवी%20आहे."
+<a class="service-whatsapp"
+href="https://wa.me/917020764054?text=नमस्कार,%20मला%20PM-KISAN%20योजनेबद्दल%20माहिती%20हवी%20आहे."
 target="_blank">
-💬 चौकशी
+💬 WhatsApp वर विचारा
 </a>
-
-</div>
-
 </div>
 
 
-<!-- 02 -->
+<!-- 2 -->
 
 <div class="service-card">
-
 <div class="icon">💰</div>
-
-<div class="service-number">सेवा क्र. 02</div>
-
 <h3>पुण्यश्लोक अहिल्यादेवी होळकर शेतकरी कर्जमुक्ती योजना</h3>
-
-<p class="description">
-शेतकरी कर्जमुक्ती योजनेशी संबंधित ऑनलाइन माहिती, यादी तपासणी व आवश्यक सहाय्य.
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>बँक पासबुक</li>
-<li>कर्ज खाते / कर्जाची माहिती</li>
-<li>7/12 उतारा</li>
-<li>8-A उतारा</li>
-<li>मोबाईल नंबर</li>
-</ul>
-
-<div class="note">
-कागदपत्रे व पात्रता योजनेच्या नियमांनुसार बदलू शकतात.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20शेतकरी%20कर्जमुक्ती%20योजनेबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
-<!-- 03 -->
+<!-- 3 -->
 
 <div class="service-card">
-
 <div class="icon">🌱</div>
-
-<div class="service-number">सेवा क्र. 03</div>
-
-<h3>प्रधानमंत्री पीक विमा योजना</h3>
-
-<p class="description">
-पीक विमा अर्ज, ई-पिक पाहणी आणि संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.
+<h3>प्रधानमंत्री फसल विमा योजना</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>7/12 उतारा</li>
-<li>8-A उतारा</li>
-<li>बँक पासबुक</li>
-<li>पिकाची माहिती</li>
-<li>मोबाईल नंबर</li>
-<li>ई-पिक पाहणीची माहिती / नोंद आवश्यकतेनुसार</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20पीक%20विमा%20योजनेबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
-<!-- 04 -->
+<!-- 4 -->
 
 <div class="service-card">
-
 <div class="icon">🏥</div>
-
-<div class="service-number">सेवा क्र. 04</div>
-
 <h3>आयुष्मान भारत PM-JAY कार्ड</h3>
-
-<p class="description">
-पात्रता तपासणी, आयुष्मान भारत कार्ड काढणे व कार्ड प्रिंट करून मिळणे.
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>रेशन कार्ड / कुटुंबाची माहिती</li>
-<li>मोबाईल नंबर</li>
-<li>पात्रतेनुसार उपलब्ध ओळखपत्र</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20आयुष्मान%20भारत%20कार्डबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
-<!-- 05 -->
+<!-- 5 -->
 
 <div class="service-card">
-
 <div class="icon">📜</div>
-
-<div class="service-number">सेवा क्र. 05</div>
-
-<h3>डिजिटल 7/12 व 8-A उतारा</h3>
-
-<p class="description">
-डिजिटल सातबारा व 8-A उतारा मिळवण्यासाठी ऑनलाइन सुविधा.
+<h3>डिजिटल 7/12 उतारा</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक माहिती
-</div>
-
-<ul>
-<li>गट नंबर / सर्वे नंबर</li>
-<li>गावाचे नाव</li>
-<li>तालुका व जिल्हा</li>
-<li>मालकाचे नाव</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20डिजिटल%207%2F12%20उताऱ्याबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
-<!-- 06 -->
+<!-- 6 -->
 
 <div class="service-card">
+<div class="icon">📜</div>
+<h3>डिजिटल 8-A उतारा</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
+</p>
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20डिजिटल%208-A%20उताऱ्याबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
+</div>
 
+
+<!-- 7 -->
+
+<div class="service-card">
 <div class="icon">🗂️</div>
-
-<div class="service-number">सेवा क्र. 06</div>
-
-<h3>ई-फेरफार / जमीनविषयक ऑनलाइन सेवा</h3>
-
-<p class="description">
-ई-फेरफार, जमीन नोंद व संबंधित ऑनलाइन प्रक्रियेसाठी सहाय्य.
+<h3>ई-फेरफार सेवा</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>7/12 उतारा</li>
-<li>8-A उतारा</li>
-<li>खरेदीखत / वारस कागदपत्रे - लागू असल्यास</li>
-<li>मृत्यू प्रमाणपत्र - वारस प्रकरणात</li>
-<li>आधार कार्ड</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20ई-फेरफार%20सेवेबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
-<!-- 07 -->
+<!-- 8 -->
 
 <div class="service-card">
-
 <div class="icon">🏛️</div>
-
-<div class="service-number">सेवा क्र. 07</div>
-
 <h3>उद्यम / MSME Registration</h3>
-
-<p class="description">
-उद्यम नोंदणी व MSME संबंधित ऑनलाइन अर्जासाठी सहाय्य.
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे / माहिती
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>PAN कार्ड</li>
-<li>मोबाईल नंबर</li>
-<li>ई-मेल ID</li>
-<li>व्यवसायाची माहिती</li>
-<li>बँक खात्याची माहिती</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20Udyam%20MSME%20Registration%20बद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
-<!-- 08 -->
+<!-- 9 -->
 
 <div class="service-card">
-
 <div class="icon">📋</div>
-
-<div class="service-number">सेवा क्र. 08</div>
-
 <h3>जात प्रमाणपत्र</h3>
-
-<p class="description">
-जात प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्रांच्या प्रक्रियेत सहाय्य.
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>जात नमूद असलेला शाळा सोडल्याचा दाखला / शैक्षणिक पुरावा</li>
-<li>वडील / रक्त नातेवाईकांचे जुने जात पुरावे - उपलब्ध असल्यास</li>
-<li>रहिवासी पुरावा</li>
-<li>जात प्रमाणपत्रासाठी आवश्यक इतर पुरावे - प्रकरणानुसार</li>
-</ul>
-
-</div>
-
-</div>
-
-
-<!-- 09 -->
-
-<div class="service-card">
-
-<div class="icon">🏠</div>
-
-<div class="service-number">सेवा क्र. 09</div>
-
-<h3>रहिवासी / अधिवास प्रमाणपत्र</h3>
-
-<p class="description">
-महाराष्ट्रातील रहिवासाचा अधिकृत पुरावा मिळवण्यासाठी ऑनलाइन अर्ज सहाय्य.
-</p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>जन्म दाखला / शाळा सोडल्याचा दाखला</li>
-<li>रहिवासाचा पुरावा</li>
-<li>रेशन कार्ड - लागू असल्यास</li>
-<li>घरपट्टी / जमीन कागदपत्रे - उपलब्ध असल्यास</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20जात%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 10 -->
 
 <div class="service-card">
-
-<div class="icon">💵</div>
-
-<div class="service-number">सेवा क्र. 10</div>
-
-<h3>उत्पन्न प्रमाणपत्र</h3>
-
-<p class="description">
-कुटुंबाच्या वार्षिक उत्पन्नाचा अधिकृत दाखला मिळवण्यासाठी ऑनलाइन अर्ज.
+<div class="icon">🏠</div>
+<h3>रहिवासी प्रमाणपत्र / Domicile</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>रेशन कार्ड</li>
-<li>7/12 उतारा - शेती असल्यास</li>
-<li>पगाराचा पुरावा - नोकरी असल्यास</li>
-<li>उत्पन्नाचा इतर पुरावा - लागू असल्यास</li>
-<li>बँक पासबुक - आवश्यकतेनुसार</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20रहिवासी%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 11 -->
 
 <div class="service-card">
-
-<div class="icon">🎓</div>
-
-<div class="service-number">सेवा क्र. 11</div>
-
-<h3>EWS प्रमाणपत्र</h3>
-
-<p class="description">
-आर्थिकदृष्ट्या दुर्बल घटकासाठी EWS प्रमाणपत्राच्या अर्जासाठी सहाय्य.
+<div class="icon">💵</div>
+<h3>उत्पन्न प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>उत्पन्न प्रमाणपत्र</li>
-<li>रेशन कार्ड</li>
-<li>7/12 उतारा - शेती असल्यास</li>
-<li>मालमत्ता / घराचा पुरावा - लागू असल्यास</li>
-<li>इतर आवश्यक मालमत्ता कागदपत्रे - प्रकरणानुसार</li>
-</ul>
-
-<div class="note">
-EWS पात्रता उत्पन्नासोबत शासनाने निश्चित केलेल्या मालमत्ता निकषांवरही अवलंबून असते.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20उत्पन्न%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 12 -->
 
 <div class="service-card">
-
-<div class="icon">📑</div>
-
-<div class="service-number">सेवा क्र. 12</div>
-
-<h3>Non-Creamy Layer प्रमाणपत्र</h3>
-
-<p class="description">
-OBC/VJNT/SBC इत्यादी पात्र प्रवर्गांसाठी Non-Creamy Layer प्रमाणपत्र.
+<div class="icon">🎓</div>
+<h3>EWS प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>जात प्रमाणपत्र</li>
-<li>उत्पन्न प्रमाणपत्र</li>
-<li>आधार कार्ड</li>
-<li>रेशन कार्ड</li>
-<li>पालकांचे उत्पन्न / सेवा संबंधित पुरावे - लागू असल्यास</li>
-<li>इतर जात व उत्पन्न पुरावे - प्रकरणानुसार</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20EWS%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 13 -->
 
 <div class="service-card">
-
-<div class="icon">👴</div>
-
-<div class="service-number">सेवा क्र. 13</div>
-
-<h3>ज्येष्ठ नागरिक प्रमाणपत्र</h3>
-
-<p class="description">
-ज्येष्ठ नागरिकांसाठी वयाचा अधिकृत पुरावा व प्रमाणपत्रासाठी अर्ज सहाय्य.
+<div class="icon">📑</div>
+<h3>Non-Creamy Layer प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>जन्म दाखला / शाळा सोडल्याचा दाखला</li>
-<li>वयाचा वैध पुरावा</li>
-<li>रहिवासी पुरावा</li>
-<li>पासपोर्ट फोटो - आवश्यकतेनुसार</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20Non-Creamy%20Layer%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 14 -->
 
 <div class="service-card">
-
-<div class="icon">👨‍🌾</div>
-
-<div class="service-number">सेवा क्र. 14</div>
-
-<h3>भूमिहीन कृषी शेतमजूर प्रमाणपत्र</h3>
-
-<p class="description">
-भूमिहीन कृषी शेतमजूर प्रमाणपत्रासाठी ऑनलाइन अर्ज व कागदपत्र सहाय्य.
+<div class="icon">👴</div>
+<h3>ज्येष्ठ नागरिक प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>रेशन कार्ड</li>
-<li>रहिवासी पुरावा</li>
-<li>जमीन नसल्याचा / उपलब्ध जमीन नोंदीचा पुरावा</li>
-<li>उत्पन्न प्रमाणपत्र - लागू असल्यास</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20ज्येष्ठ%20नागरिक%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 15 -->
 
 <div class="service-card">
-
-<div class="icon">🔥</div>
-
-<div class="service-number">सेवा क्र. 15</div>
-
-<h3>PM Ujjwala 2.0</h3>
-
-<p class="description">
-प्रधानमंत्री उज्ज्वला योजना 2.0 अंतर्गत पात्र लाभार्थ्यांसाठी अर्ज सहाय्य.
+<div class="icon">👨‍🌾</div>
+<h3>भूमिहीन कृषी शेतमजूर प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>रेशन कार्ड / कुटुंब तपशील</li>
-<li>बँक खाते तपशील</li>
-<li>मोबाईल नंबर</li>
-<li>पात्रतेनुसार आवश्यक घोषणा / कागदपत्रे</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20भूमिहीन%20शेतमजूर%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 16 -->
 
 <div class="service-card">
-
-<div class="icon">🪪</div>
-
-<div class="service-number">सेवा क्र. 16</div>
-
-<h3>Maha ID / Maha Sarathi Card</h3>
-
-<p class="description">
-महा ID व संबंधित डिजिटल कार्ड सेवांसाठी ऑनलाइन सहाय्य.
+<div class="icon">🔥</div>
+<h3>PM Ujjwala 2.0</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>मोबाईल नंबर</li>
-<li>फोटो - आवश्यकतेनुसार</li>
-<li>योजनेनुसार आवश्यक इतर कागदपत्रे</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20PM%20Ujjwala%202.0%20बद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 17 -->
 
 <div class="service-card">
-
-<div class="icon">💔</div>
-
-<div class="service-number">सेवा क्र. 17</div>
-
-<h3>घटस्फोटित प्रमाणपत्र / Divorcee Certificate</h3>
-
-<p class="description">
-घटस्फोट झालेल्या महिलेसाठी घटस्फोटित म्हणून प्रमाणपत्र मिळवण्यासाठी अर्ज सहाय्य.
+<div class="icon">🪪</div>
+<h3>महा ID / Maha Sarathi Card</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>घटस्फोटाचा अंतिम कोर्ट आदेश / Decree</li>
-<li>आधार कार्ड</li>
-<li>रहिवासी पुरावा</li>
-<li>रेशन कार्ड - आवश्यकतेनुसार</li>
-<li>फोटो - आवश्यकतेनुसार</li>
-<li>इतर कागदपत्रे - कार्यालयाच्या मागणीनुसार</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20Maha%20ID%20%2F%20Maha%20Sarathi%20Card%20बद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 18 -->
 
 <div class="service-card">
-
-<div class="icon">♿</div>
-
-<div class="service-number">सेवा क्र. 18</div>
-
-<h3>अपंगत्व प्रमाणपत्र / UDID</h3>
-
-<p class="description">
-अपंगत्वाचे वैद्यकीय मूल्यांकन व UDID संबंधित ऑनलाइन अर्जासाठी सहाय्य.
+<div class="icon">🔐</div>
+<h3>KYC सेवा</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>पासपोर्ट फोटो</li>
-<li>जुने मेडिकल रिपोर्ट - असल्यास</li>
-<li>अपंगत्वाशी संबंधित वैद्यकीय कागदपत्रे - असल्यास</li>
-<li>मोबाईल नंबर</li>
-</ul>
-
-<div class="note">
-वैद्यकीय तपासणीसाठी संबंधित रुग्णालय / वैद्यकीय मंडळासमोर उपस्थित राहणे आवश्यक असू शकते.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20KYC%20सेवेबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 19 -->
 
 <div class="service-card">
-
-<div class="icon">🥛</div>
-
-<div class="service-number">सेवा क्र. 19</div>
-
-<h3>No Milk Trace Certificate</h3>
-
-<p class="description">
-दूध व्यवसाय / दुधाळ जनावरे नसल्याबाबत आवश्यक प्रमाणपत्रासाठी अर्ज सहाय्य.
+<div class="icon">📝</div>
+<h3>विविध शासकीय ऑनलाइन फॉर्म</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>रेशन कार्ड</li>
-<li>रहिवासी पुरावा</li>
-<li>स्थानिक अधिकारी / ग्रामपंचायत अहवाल - लागू असल्यास</li>
-<li>स्वयंघोषणा / प्रतिज्ञापत्र - आवश्यक असल्यास</li>
-</ul>
-
-<div class="note">
-स्थानिक कार्यालयाच्या नियमांनुसार प्रत्यक्ष पडताळणी किंवा अतिरिक्त कागदपत्रे लागू शकतात.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20विविध%20शासकीय%20ऑनलाइन%20फॉर्मबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 20 -->
 
 <div class="service-card">
-
-<div class="icon">💼</div>
-
-<div class="service-number">सेवा क्र. 20</div>
-
-<h3>बेरोजगार प्रमाणपत्र</h3>
-
-<p class="description">
-अर्जदार बेरोजगार असल्याबाबत प्रमाणपत्रासाठी ऑनलाइन अर्ज व मार्गदर्शन.
+<div class="icon">🟡</div>
+<h3>हळद प्रक्रिया मशीन योजना</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>शैक्षणिक कागदपत्रे - आवश्यकतेनुसार</li>
-<li>रहिवासी पुरावा</li>
-<li>बँक पासबुक - योजनेनुसार</li>
-<li>बेरोजगार असल्याबाबत स्वयंघोषणा / प्रतिज्ञापत्र - लागू असल्यास</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20हळद%20प्रक्रिया%20मशीन%20योजनेबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 21 -->
 
 <div class="service-card">
-
-<div class="icon">👨‍👩‍👧</div>
-
-<div class="service-number">सेवा क्र. 21</div>
-
-<h3>एकल पालक प्रमाणपत्र / Single Parent Certificate</h3>
-
-<p class="description">
-विधवा, विधुर, घटस्फोटित किंवा इतर लागू परिस्थितीत एकल पालकत्वाचा पुरावा.
+<div class="icon">📄</div>
+<h3>घटस्फोटित प्रमाणपत्र / Divorcee Certificate</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>पालकाचे आधार कार्ड</li>
-<li>मुलांचे जन्म दाखले</li>
-<li>मृत्यू प्रमाणपत्र - लागू असल्यास</li>
-<li>घटस्फोटाचा कोर्ट आदेश - लागू असल्यास</li>
-<li>पोलिस तक्रार / इतर पुरावा - जोडीदार बेपत्ता/सोडून गेल्यास, लागू असल्यास</li>
-<li>रहिवासी पुरावा</li>
-<li>इतर कागदपत्रे - प्रकरणानुसार</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20घटस्फोटित%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 22 -->
 
 <div class="service-card">
-
-<div class="icon">🌾</div>
-
-<div class="service-number">सेवा क्र. 22</div>
-
-<h3>लहान व सीमांत शेतकरी प्रमाणपत्र</h3>
-
-<p class="description">
-लहान / सीमांत शेतकरी म्हणून पात्रता व प्रमाणपत्रासाठी ऑनलाइन अर्ज सहाय्य.
+<div class="icon">♿</div>
+<h3>अपंगत्व प्रमाणपत्र / Disability Certificate</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>चालू 7/12 उतारा</li>
-<li>8-A उतारा</li>
-<li>जमिनीची नोंद / मालकीचा पुरावा</li>
-<li>रहिवासी पुरावा - आवश्यकतेनुसार</li>
-<li>बँक पासबुक - योजनेनुसार</li>
-</ul>
-
-<div class="note">
-लहान / सीमांत शेतकरी वर्गीकरण संबंधित शासन निकष व जमिनीच्या नोंदीवर आधारित असते.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20अपंगत्व%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 23 -->
 
 <div class="service-card">
-
 <div class="icon">📜</div>
-
-<div class="service-number">सेवा क्र. 23</div>
-
-<h3>जाती वैधता प्रमाणपत्र / Caste Validity Certificate</h3>
-
-<p class="description">
-जात प्रमाणपत्राची वैधता तपासण्यासाठी जात पडताळणी समितीकडे ऑनलाइन अर्ज.
+<h3>नो मिल्क ट्रेस प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>जात प्रमाणपत्र</li>
-<li>आधार कार्ड</li>
-<li>शाळा सोडल्याचा दाखला / शैक्षणिक नोंदी</li>
-<li>वडील / रक्त नातेवाईकांचे जुने जात पुरावे</li>
-<li>रक्त नातेवाईकांची जात वैधता - असल्यास</li>
-<li>इतर जुने महसूल / शैक्षणिक पुरावे</li>
-<li>अर्जाच्या कारणानुसार आवश्यक कागदपत्रे</li>
-</ul>
-
-<div class="note">
-प्रकरणानुसार कागदपत्रे व चौकशी बदलू शकते.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20No%20Milk%20Trace%20Certificate%20बद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 24 -->
 
 <div class="service-card">
-
-<div class="icon">💵</div>
-
-<div class="service-number">सेवा क्र. 24</div>
-
-<h3>उत्पन्न प्रमाणपत्र - अद्ययावत / Renewal</h3>
-
-<p class="description">
-शिष्यवृत्ती, प्रवेश, योजना किंवा इतर कारणांसाठी आवश्यक चालू उत्पन्न प्रमाणपत्र.
+<div class="icon">💰</div>
+<h3>उत्पन्न प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>रेशन कार्ड</li>
-<li>7/12 उतारा - शेती असल्यास</li>
-<li>उत्पन्नाचे पुरावे</li>
-<li>मागील उत्पन्न प्रमाणपत्र - उपलब्ध असल्यास</li>
-<li>नोकरी / व्यवसाय / शेतीचे संबंधित पुरावे</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20उत्पन्न%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 25 -->
 
 <div class="service-card">
-
-<div class="icon">💧</div>
-
-<div class="service-number">सेवा क्र. 25</div>
-
-<h3>नानासाहेब देशमुख कृषी संजीवनी योजना 2.0 / PoCRA 2.0</h3>
-
-<p class="description">
-पात्र गावांतील शेतकऱ्यांसाठी विविध कृषी घटकांच्या ऑनलाइन अर्जासाठी सहाय्य.
+<div class="icon">📑</div>
+<h3>नॉन-क्रीमी लेयर प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>7/12 उतारा</li>
-<li>8-A उतारा</li>
-<li>बँक पासबुक</li>
-<li>मोबाईल नंबर</li>
-<li>जात प्रमाणपत्र - लागू असल्यास</li>
-<li>स्वयंघोषणा / संबंधित कागदपत्रे - घटकानुसार</li>
-<li>पूर्वी लाभ घेतल्याचा पुरावा - लागू असल्यास</li>
-</ul>
-
-<div class="note">
-योजनेतील घटक, अनुदान व कागदपत्रे पात्रता आणि शासनाच्या चालू मार्गदर्शक सूचनांनुसार बदलू शकतात.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20नॉन-क्रीमी%20लेयर%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 26 -->
 
 <div class="service-card">
-
-<div class="icon">☀️</div>
-
-<div class="service-number">सेवा क्र. 26</div>
-
-<h3>मागेल त्याला सोलार कृषी पंप योजना</h3>
-
-<p class="description">
-सौर कृषी पंपासाठी ऑनलाइन अर्ज व पात्रता प्रक्रियेसाठी सहाय्य.
+<div class="icon">🎓</div>
+<h3>EWS प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>7/12 उतारा</li>
-<li>8-A उतारा</li>
-<li>बँक पासबुक</li>
-<li>रद्द चेक - आवश्यकतेनुसार</li>
-<li>मोबाईल नंबर</li>
-<li>जात प्रमाणपत्र - लागू असल्यास</li>
-<li>वीज कनेक्शन / वीज बिल - लागू असल्यास</li>
-<li>पाण्याच्या स्रोताची माहिती - योजनेनुसार</li>
-</ul>
-
-<div class="note">
-अनुदानाची टक्केवारी, पंपाची क्षमता व पात्रता चालू शासन नियमांनुसार तपासली जाईल.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20EWS%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 27 -->
 
 <div class="service-card">
-
-<div class="icon">🟡</div>
-
-<div class="service-number">सेवा क्र. 27</div>
-
-<h3>हळद प्रक्रिया मशीन योजना</h3>
-
-<p class="description">
-हळद प्रक्रिया, पॉलिशिंग व हळद काढणी मशीनसाठी ऑनलाइन अर्ज सहाय्य.
+<div class="icon">👴</div>
+<h3>ज्येष्ठ नागरिक प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>7/12 उतारा - शेतकरी असल्यास</li>
-<li>8-A उतारा - लागू असल्यास</li>
-<li>बँक पासबुक</li>
-<li>मोबाईल नंबर</li>
-<li>जात प्रमाणपत्र - लागू असल्यास</li>
-<li>घटकानुसार आवश्यक कागदपत्रे</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20ज्येष्ठ%20नागरिक%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 28 -->
 
 <div class="service-card">
-
-<div class="icon">🔐</div>
-
-<div class="service-number">सेवा क्र. 28</div>
-
-<h3>विविध KYC सेवा</h3>
-
-<p class="description">
-शासकीय योजना, बँकिंग व विविध ऑनलाइन सेवांसाठी KYC प्रक्रियेसाठी सहाय्य.
+<div class="icon">👤</div>
+<h3>बेरोजगार प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 सामान्यतः आवश्यक कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>PAN कार्ड - लागू असल्यास</li>
-<li>बँक पासबुक</li>
-<li>मोबाईल नंबर</li>
-<li>योजनेनुसार इतर कागदपत्रे</li>
-</ul>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20बेरोजगार%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 29 -->
 
 <div class="service-card">
-
-<div class="icon">📝</div>
-
-<div class="service-number">सेवा क्र. 29</div>
-
-<h3>विविध शासकीय ऑनलाइन फॉर्म</h3>
-
-<p class="description">
-विविध सरकारी योजना, प्रमाणपत्रे, अर्ज व ऑनलाइन सेवांसाठी फॉर्म भरण्याची सुविधा.
+<div class="icon">👨‍👩‍👧</div>
+<h3>एकल पालक प्रमाणपत्र / Single Parent Certificate</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 सामान्य कागदपत्रे
-</div>
-
-<ul>
-<li>आधार कार्ड</li>
-<li>मोबाईल नंबर</li>
-<li>बँक पासबुक</li>
-<li>रेशन कार्ड</li>
-<li>योजनेनुसार प्रमाणपत्रे</li>
-<li>योजनेनुसार जमीन / उत्पन्न / जात कागदपत्रे</li>
-</ul>
-
-<div class="note">
-प्रत्येक योजनेनुसार आवश्यक कागदपत्रांची यादी वेगळी असू शकते.
-</div>
-
-</div>
-
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20एकल%20पालक%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
 <!-- 30 -->
 
 <div class="service-card">
-
-<div class="icon">👩‍🌾</div>
-
-<div class="service-number">सेवा क्र. 30</div>
-
-<h3>महिला, विद्यार्थी व नागरिकांसाठी योजना अर्ज</h3>
-
-<p class="description">
-शिष्यवृत्ती, सामाजिक सुरक्षा, महिला योजना, घरकुल व इतर पात्र योजनांसाठी ऑनलाइन अर्ज सहाय्य.
+<div class="icon">♿</div>
+<h3>अपंग प्रमाणपत्र / Disability Certificate</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
 </p>
-
-<div class="documents">
-
-<div class="documents-title">
-📄 कागदपत्रे - योजनानुसार
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20अपंग%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
-<ul>
-<li>आधार कार्ड</li>
-<li>बँक पासबुक</li>
-<li>मोबाईल नंबर</li>
-<li>उत्पन्न प्रमाणपत्र - लागू असल्यास</li>
-<li>जात प्रमाणपत्र - लागू असल्यास</li>
-<li>रहिवासी प्रमाणपत्र - लागू असल्यास</li>
-<li>वयाचा पुरावा - लागू असल्यास</li>
-<li>शैक्षणिक कागदपत्रे - विद्यार्थी योजनांसाठी</li>
-</ul>
 
+<!-- 31 -->
+
+<div class="service-card">
+<div class="icon">🌾</div>
+<h3>लहान व सीमांत शेतकरी प्रमाणपत्र</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
+</p>
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20लहान%20व%20सीमांत%20शेतकरी%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
+
+<!-- 32 -->
+
+<div class="service-card">
+<div class="icon">📜</div>
+<h3>जाती वैधता प्रमाणपत्र / Caste Validity Certificate</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
+</p>
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20जाती%20वैधता%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
+</div>
+
+
+<!-- 33 -->
+
+<div class="service-card">
+<div class="icon">🏠</div>
+<h3>रहिवासी प्रमाणपत्र / Domicile Certificate</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
+</p>
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20Domicile%20प्रमाणपत्राबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
+</div>
+
+
+<!-- 34 -->
+
+<div class="service-card">
+<div class="icon">☀️</div>
+<h3>मागेल त्याला सोलार कृषी पंप योजना</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
+</p>
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20मागेल%20त्याला%20सोलार%20कृषी%20पंप%20योजनेबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
+</div>
+
+
+<!-- 35 -->
+
+<div class="service-card">
+<div class="icon">🌱</div>
+<h3>नानासाहेब देशमुख कृषी संजीवनी योजना 2.0 / पोक्रा 2.0</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
+</p>
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20पोक्रा%202.0%20योजनेबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
+</div>
+
+
+<!-- 36 -->
+
+<div class="service-card">
+<div class="icon">📚</div>
+<h3>MAHA DBT सर्व योजना</h3>
+<p class="service-info">
+अधिक माहितीसाठी महारुद्र ऑनलाइन सेंटरशी संपर्क करा.
+</p>
+<a class="service-whatsapp" href="https://wa.me/917020764054?text=नमस्कार,%20मला%20MAHA%20DBT%20योजनांबद्दल%20माहिती%20हवी%20आहे." target="_blank">
+💬 WhatsApp वर विचारा
+</a>
 </div>
 
 
@@ -1699,17 +1082,19 @@ OBC/VJNT/SBC इत्यादी पात्र प्रवर्गां�
 </p>
 
 <p>
-अर्ज प्रक्रिया, कागदपत्रे, KYC, प्रमाणपत्रे आणि
-विविध शासकीय योजनांसाठी आवश्यक ऑनलाइन सहाय्य
-विश्वासाने उपलब्ध करून दिले जाते.
+अर्ज प्रक्रिया, KYC, प्रमाणपत्रे आणि विविध शासकीय
+योजनांसाठी आवश्यक ऑनलाइन सहाय्य विश्वासाने
+उपलब्ध करून दिले जाते.
 </p>
 
 <ul class="points">
+
 <li>विश्वासार्ह ऑनलाइन सेवा</li>
 <li>शेतकरी बांधवांसाठी विशेष सहाय्य</li>
 <li>विविध शासकीय योजनांची माहिती</li>
 <li>डिजिटल सेवा एकाच ठिकाणी</li>
 <li>कागदपत्रांबाबत योग्य मार्गदर्शन</li>
+
 </ul>
 
 </div>
@@ -1731,8 +1116,8 @@ OBC/VJNT/SBC इत्यादी पात्र प्रवर्गां�
 महारुद्र ऑनलाइन सेंटर, फुलसावंगी.
 </p>
 
-<a class="btn btn-primary"
-href="https://wa.me/917020764054"
+<a class="btn btn-whatsapp"
+href="https://wa.me/917020764054?text=नमस्कार,%20मला%20महारुद्र%20ऑनलाइन%20सेंटरच्या%20सेवांबद्दल%20माहिती%20हवी%20आहे."
 target="_blank">
 💬 WhatsApp वर संपर्क करा
 </a>
@@ -1750,12 +1135,15 @@ target="_blank">
 
 <h2>आमच्याशी संपर्क</h2>
 
-<p>ऑनलाइन सेवांसाठी आजच संपर्क करा.</p>
+<p>
+ऑनलाइन सेवांसाठी आजच संपर्क करा.
+</p>
 
 </div>
 
 
 <div class="contact-box">
+
 
 <div class="contact-card">
 
@@ -1766,13 +1154,12 @@ target="_blank">
 </div>
 
 <div class="contact-item">
+
 देवी मंदिराच्या पाठीमागे,<br>
 आठवडी बाजार रोड,<br>
-आंबेडकर चौक, फुलसावंगी.
-</div>
+आंबेडकर चौक, फुलसावंगी.<br>
+<strong>ता. महागाव, जि. यवतमाळ, महाराष्ट्र</strong>
 
-<div class="contact-item">
-ता. उमरखेड, जि. यवतमाळ
 </div>
 
 </div>
@@ -1783,9 +1170,25 @@ target="_blank">
 <h3>📞 संपर्क</h3>
 
 <div class="contact-item">
+
 <strong>मोबाईल:</strong>
-<a href="tel:7020764054">7020764054</a>
+<a href="tel:7020764054">
+7020764054
+</a>
+
 </div>
+
+
+<div class="contact-item">
+
+<strong>ई-मेल:</strong><br>
+
+<a href="mailto:omkrushnapure9.ok@gmail.com">
+omkrushnapure9.ok@gmail.com
+</a>
+
+</div>
+
 
 <div class="buttons">
 
@@ -1795,7 +1198,7 @@ href="tel:7020764054">
 </a>
 
 <a class="btn btn-whatsapp"
-href="https://wa.me/917020764054"
+href="https://wa.me/917020764054?text=नमस्कार,%20मला%20महारुद्र%20ऑनलाइन%20सेंटरच्या%20सेवांबद्दल%20माहिती%20हवी%20आहे."
 target="_blank">
 💬 WhatsApp
 </a>
@@ -1818,47 +1221,26 @@ target="_blank">
 <p>फुलसावंगी</p>
 
 <p>
-शेतकरी बांधव व नागरिकांसाठी विविध ऑनलाइन सेवा एकाच ठिकाणी!
+शेतकरी बांधव व नागरिकांसाठी
+विविध ऑनलाइन सेवा एकाच ठिकाणी!
 </p>
 
+<div class="footer-email">
+📧
+<a href="mailto:omkrushnapure9.ok@gmail.com">
+omkrushnapure9.ok@gmail.com
+</a>
+</div>
+
 <div class="footer-bottom">
-© 2026 Maharudra Online Center Fulsawangi. All Rights Reserved.
+
+© 2026 Maharudra Online Center Fulsawangi.
+All Rights Reserved.
+
 </div>
 
 </footer>
 
-
-<script>
-
-/* SERVICE SEARCH */
-
-function searchServices(){
-
-    let input =
-    document.getElementById("serviceSearch")
-    .value
-    .toLowerCase()
-    .trim();
-
-    let cards =
-    document.querySelectorAll(".service-card");
-
-    cards.forEach(function(card){
-
-        let text =
-        card.innerText.toLowerCase();
-
-        if(text.includes(input)){
-            card.style.display="";
-        }else{
-            card.style.display="none";
-        }
-
-    });
-
-}
-
-</script>
 
 </body>
 </html>
